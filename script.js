@@ -349,7 +349,7 @@ fighters.forEach((fighter, index, array) => {
         cardName = cardName.replace(/ /g, "-");
         
         let newImage = document.createElement('img');
-        newImage.src = "/img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
         cardsContainer.appendChild(newImage);
     });
 });
