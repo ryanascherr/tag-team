@@ -229,6 +229,109 @@ let fighters = [
                 name: "Wall of Flame"
             }
         ]
+    },
+    {
+        name: "The Fey Folk",
+        health: 3-5,
+        startingPower: 0,
+        cards: [
+            {
+                name: "All Legends Must Pass"
+            },
+            {
+                name: "Entanglement"
+            },
+            {
+                name: "Fairy Ring"
+            },
+            {
+                name: "Spirit Storm"
+            },
+            {
+                name: "Summoning Leshi"
+            },
+            {
+                name: "Summoning Redcap"
+            },
+            {
+                name: "Summoning The Green Man"
+            }
+        ]
+    },
+    {
+        name: "The Golem",
+        health: 25,
+        startingPower: 1,
+        cards: [
+            {
+                name: "Protect the Innocent"
+            },
+            {
+                name: "Fist of Clay"
+            },
+            {
+                name: "Heal the Wounded"
+            },
+            {
+                name: "Reanimation"
+            },
+            {
+                name: "Self Sacrifice"
+            }
+        ]
+    },
+    {
+        name: "The Wild Bunch",
+        health: 5,
+        startingPower: 1,
+        cards: [
+            {
+                name: "Corrupted Lawman"
+            },
+            {
+                name: "Back to the Hideout"
+            },
+            {
+                name: "Bribe"
+            },
+            {
+                name: "Keys to the Armory"
+            },
+            {
+                name: "Outlaw Doc"
+            },
+            {
+                name: "Sheriffs Personal Gatling Gun"
+            },
+            {
+                name: "We Aint Here to Talk"
+            }
+        ]
+    },
+    {
+        name: "Wong Fei-Hung",
+        health: 17,
+        startingPower: 2,
+        cards: [
+            {
+                name: "The Harder They Fall"
+            },
+            {
+                name: "Chi Focus"
+            },
+            {
+                name: "Crippling Touch"
+            },
+            {
+                name: "Ging Balance"
+            },
+            {
+                name: "Ging Bridge"
+            },
+            {
+                name: "Tiger Fist"
+            },
+        ]
     }
 ];
 
