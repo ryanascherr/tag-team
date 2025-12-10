@@ -103,6 +103,132 @@ let fighters = [
                 name: "Sword of St Michael"
             }
         ]
+    },
+    {
+        name: "Maman Brijit",
+        health: 16,
+        startingPower: 2,
+        specialHealthTrack: true,
+        cards: [
+            {
+                name: "Chili Pepper Rum"
+            },
+            {
+                name: "Eternal Youth"
+            },
+            {
+                name: "Sacrifice of Love"
+            },
+            {
+                name: "Soul Embrace"
+            },
+            {
+                name: "The Black Rooster"
+            },
+            {
+                name: "You Are Mine"
+            }
+        ]
+    },
+    {
+        name: "Mephisto",
+        health: 13,
+        startingPower: 1,
+        cards: [
+            {
+                name: "Twin Serpents"
+            },
+            {
+                name: "Drag You to Hell"
+            },
+            {
+                name: "Fury of the Damned"
+            },
+            {
+                name: "Serpent of the Pit"
+            },
+            {
+                name: "Serpent of the Void"
+            },
+            {
+                name: "Soul Siphon"
+            }
+        ]
+    },
+    {
+        name: "Milady",
+        health: 16,
+        startingPower: 1,
+        cards: [
+            {
+                name: "Dressed to Kill"
+            },
+            {
+                name: "Checkmate"
+            },
+            {
+                name: "I Keep My Friends Close"
+            },
+            {
+                name: "Licking My Wounds"
+            },
+            {
+                name: "So Predictable"
+            },
+            {
+                name: "What Doesnt Kill You Makes Me Stronger"
+            },
+            {
+                name: "With a Stab and a Smile"
+            }
+        ]
+    },
+    {
+        name: "Mordred",
+        health: 19,
+        startingPower: 0,
+        cards: [
+            {
+                name: "Dark Power"
+            },
+            {
+                name: "Cloak of Shadow"
+            },
+            {
+                name: "Execution"
+            },
+            {
+                name: "Hidden Dagger"
+            },
+            {
+                name: "Vicious Riposte"
+            }
+        ]
+    },
+    {
+        name: "Shango",
+        health: 15,
+        startingPower: 0,
+        cards: [
+            {
+                name: "Aflame!"
+            },
+            {
+                name: "Breath of Fire"
+            },
+            {
+                name: "Cauterize"
+            },
+            {
+                name: "Lightning Strike"
+            },
+            {
+                name: "Thunder Stone"
+            },
+            {
+                name: "Wall of Flame"
+            }
+        ]
     }
 ];
 
@@ -111,6 +237,8 @@ let cardsContainer = document.querySelector(".cards-container");
 fighters.forEach((fighter, index, array) => {
     let name = fighter.name;
     name = name.toLocaleLowerCase();
+    name = name.replace(/ /g, "-");
+
     let cards = fighter.cards;
     cards.forEach((card, index, array) => {
         let cardName = card.name;
