@@ -411,6 +411,7 @@ export let fighters = [
 
 import { getCards } from "./getCards.js";
 import { placeCards } from "./placeCards.js";
+import { openModal, closeModal } from './modalControl.js';
 
 export let cardArray = [];
 
@@ -447,7 +448,31 @@ fighters.forEach((fighter, index, array) => {
         cardName = cardName.replace(/ /g, "-");
         
         let newImage = document.createElement('img');
+        newImage.classList.add("card");
         newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
         cardsContainer.appendChild(newImage);
     });
 });
+
+
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("card")) {
+        let card = event.target;
+        let src = card.src;
+        openModal(src);
+    }
+});
+
+document.body.addEventListener('click', function(event) {
+    console.log(event.target);
+    if (event.target.classList.contains("modal__img") || event.target.classList.contains("modal__content") || event.target.classList.contains("modal__close-btn")) {
+        closeModal();
+    }
+});
+
+// $('html').keyup(function(e){
+//     if(e.keyCode == 8 && $(".modal").hasClass("open")){
+//         closeModal();
+//     }
+// });

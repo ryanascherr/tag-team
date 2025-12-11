@@ -12,6 +12,7 @@ export function placeCards(array) {
         cardName = cardName.replace(/ /g, "-");
         
         let newImage = document.createElement('img');
+        newImage.classList.add("card");
         newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
         cardsContainer.appendChild(newImage);
     });
