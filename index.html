@@ -7,10 +7,68 @@
     <title>Tag Team Database</title>
 </head>
 <body>
-    <div class="cards-container">
-        
+    <div class="filters">
+        <div class="filters__filter">
+            <h2 class="filters__title">Fighters</h2>
+            <ul class="filters__list">
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_bodvar" checked type="checkbox" id="bodvar" name="checkbox" value="1">
+                    <label class="filters__label" for="bodvar">Bodvar</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_ching-shih" checked type="checkbox" id="ching-shih" name="checkbox" value="1">
+                    <label class="filters__label" for="ching-shih">Ching Shih</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_joan" checked type="checkbox" id="joan" name="checkbox" value="1">
+                    <label class="filters__label" for="joan">Joan</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_maman-brijit" checked type="checkbox" id="maman-brijit" name="checkbox" value="1">
+                    <label class="filters__label" for="maman-brijit">Maman Brijit</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_mephisto" checked type="checkbox" id="mephisto" name="checkbox" value="1">
+                    <label class="filters__label" for="mephisto">Mephisto</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_milady" checked type="checkbox" id="milady" name="checkbox" value="1">
+                    <label class="filters__label" for="milady">Milady</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_mordred" checked type="checkbox" id="mordred" name="checkbox" value="1">
+                    <label class="filters__label" for="mordred">Mordred</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_shango" checked type="checkbox" id="shango" name="checkbox" value="1">
+                    <label class="filters__label" for="shango">Shango</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_the-fey-folk" checked type="checkbox" id="the-fey-folk" name="checkbox" value="1">
+                    <label class="filters__label" for="the-fey-folk">The Fey Folk</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_the-golem" checked type="checkbox" id="the-golem" name="checkbox" value="1">
+                    <label class="filters__label" for="the-golem">The Golem</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_the-wild-bunch" checked type="checkbox" id="the-wild-bunch" name="checkbox" value="1">
+                    <label class="filters__label" for="the-wild-bunch">The Wild Bunch</label>
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_fighter js_wong-fei-hung" checked type="checkbox" id="wong-fei-hung" name="checkbox" value="1">
+                    <label class="filters__label" for="wong-fei-hung">Wong Fei-Hung</label>
+                </li>
+            </ul>
+            <hr>
+            <div class="filters__btn-container">
+                <button class="btn js_criteria js_clear-set">Clear All</button>
+                <button class="btn js_criteria js_check-set">Check All</button>
+            </div>
+        </div>
     </div>
+    <div class="cards-container"></div>
 
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
 </body>
 </html>
