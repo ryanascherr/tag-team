@@ -14,3 +14,13 @@ export function checkFighters() {
 
     return [bodvar, chingShih, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung];
 }
+
+export function checkActions() {
+    let attack = document.querySelector('.js_attack').checked;
+    let block = document.querySelector('.js_block').checked;
+    let heal = document.querySelector('.js_heal').checked;
+    let directDamage = document.querySelector('.js_direct-damage').checked;
+    let gainPower = document.querySelector('.js_gain-power').checked;
+
+    return [attack, block, heal, directDamage, gainPower];
+}

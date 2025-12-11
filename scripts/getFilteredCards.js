@@ -39,3 +39,24 @@ export function getFighters(array, bodvar, chingShih, joan, mamanBrijit, mephist
 
     return array;
 }
+
+export function getActions(array, attack, block, heal, directDamage, gainPower) {
+
+    if (attack) {
+        array = array.filter(card => card.hasAttack === true);
+    }
+    if (block) {
+        array = array.filter(card => card.hasBlock === true);
+    }
+    if (heal) {
+        array = array.filter(card => card.hasHeal === true);
+    }
+    if (directDamage) {
+        array = array.filter(card => card.hasDirectDamage === true);
+    }
+    if (gainPower) {
+        array = array.filter(card => card.hasGainPower === true);
+    }
+
+    return array;
+}
