@@ -8,8 +8,8 @@ export let fighters = [
             {
                 fighter: "Bodvar",
                 name: "Enrage",
-                isStarter: true,
                 copies: 1,
+                isStartingCard: true,
                 hasAttack: true,
                 hasSpecial: true,
             },
@@ -65,7 +65,7 @@ export let fighters = [
                 fighter: "Ching Shih",
                 name: "Terror of the Seas",
                 copies: 1,
-                isStarter: true,
+                isStartingCard: true,
                 hasAttack: true,
                 hasHeal: true,
                 hasSpecial: true,
@@ -125,6 +125,56 @@ export let fighters = [
         ]
     },
     {
+        name: "Excalibur",
+        health: 7,
+        startingPower: 0,
+        cards: [
+            {
+                fighter: "Excalibur",
+                name: "Sword of Destiny",
+                isStartingCard: true,
+                hasDirectDamage: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Enchanted Scabbard",
+                hasDirectDamage: true,
+                hasBlock: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Pendragons Wrath",
+                hasDirectDamage: true,
+                hasAttack: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Steel on Steel",
+                hasDirectDamage: true,
+                hasBlock: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Unleashed!",
+                hasDirectDamage: true,
+                hasAttack: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Unstable Aura",
+                hasHeal: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "What Should Not Have Been Broken",
+                hasHeal: true,
+                hasDirectDamage: true
+            },
+        ]
+    },
+    {
         name: "Joan",
         health: 18,
         startingPower: 1,
@@ -132,7 +182,8 @@ export let fighters = [
         cards: [
             {
                 fighter: "Joan",
-                name: "Dieu Premier Servi"
+                name: "Dieu Premier Servi",
+                isStartingCard: true
             },
             {
                 fighter: "Joan",
@@ -166,6 +217,7 @@ export let fighters = [
             {
                 fighter: "Maman Brijit",
                 name: "Chili Pepper Rum",
+                isStartingCard: true,
                 hasAttack: true,
                 hasDirectDamage: true
             },
@@ -204,6 +256,7 @@ export let fighters = [
             {
                 fighter: "Mephisto",
                 name: "Twin Serpents",
+                isStartingCard: true,
                 hasAttack: true,
                 hasGainPower: true
             },
@@ -236,13 +289,44 @@ export let fighters = [
         ]
     },
     {
+        name: "Merlin",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "Merlin",
+                name: "Master of Order and Chaos",
+                isStartingCard: true
+            },
+            {
+                fighter: "Merlin",
+                name: "Dark Ritual",
+                hasDirectDamage: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Merlin",
+                name: "Student of the Ancient Knowledge",
+            },
+            {
+                fighter: "Merlin",
+                name: "The Standing Stones"
+            },
+            {
+                fighter: "Merlin",
+                name: "Word in the Forgotten Tongue"
+            },
+        ]
+    },
+    {
         name: "Milady",
         health: 16,
         startingPower: 1,
         cards: [
             {
                 fighter: "Milady",
-                name: "Dressed to Kill"
+                name: "Dressed to Kill",
+                isStartingCard: true
             },
             {
                 fighter: "Milady",
@@ -284,6 +368,7 @@ export let fighters = [
             {
                 fighter: "Mordred",
                 name: "Dark Power",
+                isStartingCard: true,
                 hasAttack: true,
                 hasGainPower: true
             },
@@ -312,13 +397,109 @@ export let fighters = [
         ]
     },
     {
+        name: "Morgan",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "Morgan",
+                name: "My Eyes See All",
+                isStartingCard: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Channel Power",
+                hasBlock: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Crowsclaw Charm",
+                hasBlock: true,
+                hasHeal: true,
+                hasHealAlly: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Deadly Diversion",
+                hasAttack: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Magical Mirror",
+                hasGainPower: true,
+                hasAttack: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Spiral of Life",
+                hasHeal: true,
+                hasHealBoth: true
+            },
+            {
+                fighter: "Morgan",
+                name: "The Enchantress",
+                hasBlock: true,
+                hasDirectDamage: true
+            },
+        ]
+    },
+    {
+        name: "Perceval",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "Perceval",
+                name: "The Questing Knight",
+                isStartingCard: true,
+                hasAttack: true,
+                hasBlock: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Act of Chivalry",
+                hasBlock: true,
+                hasHeal: true,
+                hasHealBoth: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Coup de Grace",
+                hasAttack: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Quest for the Holy Grail",
+            },
+            {
+                fighter: "Perceval",
+                name: "The Bleeding Lance",
+                hasAttack: true
+            },
+            {
+                fighter: "Perceval",
+                name: "The Quest Begins",
+                hasAttack: true,
+                hasHeal: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Vision of the Grail",
+                hasGainPower: true
+            },
+        ]
+    },
+    {
         name: "Shango",
         health: 15,
         startingPower: 0,
         cards: [
             {
                 fighter: "Shango",
-                name: "Aflame!"
+                name: "Aflame!",
+                isStartingCard: true
             },
             {
                 fighter: "Shango",
@@ -349,13 +530,52 @@ export let fighters = [
         ]
     },
     {
+        name: "The Dragon",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "The Dragon",
+                name: "Hide of Iron",
+                isStartingCard: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Dragonfire",
+                hasAttack: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "In the Heart of the Mountain",
+                hasBlock: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Soul of the Wyrm",
+                hasGainPower: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Tail Slash",
+                hasAttack: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Under My Wing",
+                hasHeal: true,
+                hasHealAlly: true
+            },
+        ]
+    },
+    {
         name: "The Fey Folk",
         health: 3-5,
         startingPower: 0,
         cards: [
             {
                 fighter: "The Fey Folk",
-                name: "All Legends Must Pass"
+                name: "All Legends Must Pass",
+                isStartingCard: true
             },
             {
                 fighter: "The Fey Folk",
@@ -399,6 +619,7 @@ export let fighters = [
             {
                 fighter: "The Golem",
                 name: "Protect the Innocent",
+                isStartingCard: true,
                 hasAttack: true,
                 hasDirectDamage: true
             },
@@ -424,6 +645,45 @@ export let fighters = [
         ]
     },
     {
+        name: "The Green Knight",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "The Green Knight",
+                name: "The Greenwood Sap",
+                isStartingCard: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "A Blow for a Blow",
+                hasAttack: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "Donning the Greenwood Mask",
+                hasGainPower: true,
+            },
+            {
+                fighter: "The Green Knight",
+                name: "The Green Chapel",
+                hasHeal: true,
+                hasHealAlly: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "The Might of the Greenwood",
+                hasAttack: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "The Mighty Battleaxe",
+                hasAttack: true,
+                hasDirectDamage: true
+            },
+        ]
+    },
+    {
         name: "The Wild Bunch",
         health: 5,
         startingPower: 1,
@@ -431,6 +691,7 @@ export let fighters = [
             {
                 fighter: "The Wild Bunch",
                 name: "Corrupted Lawman",
+                isStartingCard: true,
                 hasAttack: true,
                 hasGainPower: true
             },
@@ -475,6 +736,7 @@ export let fighters = [
             {
                 fighter: "Wong Fei-Hung",
                 name: "The Harder They Fall",
+                isStartingCard: true,
                 hasAttack: true
             },
             {

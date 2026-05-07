@@ -11,16 +11,23 @@ export function checkFighters() {
     let theGolem = document.querySelector('.js_the-golem').checked;
     let theWildBunch = document.querySelector('.js_the-wild-bunch').checked;
     let wongFeiHung = document.querySelector('.js_wong-fei-hung').checked;
+    let excalibur = document.querySelector('.js_excalibur').checked;
+    let merlin = document.querySelector('.js_merlin').checked;
+    let morgan = document.querySelector('.js_morgan').checked;
+    let perceval = document.querySelector('.js_perceval').checked;
+    let theDragon = document.querySelector('.js_the-dragon').checked;
+    let theGreenKnight = document.querySelector('.js_the-green-knight').checked;
 
-    return [bodvar, chingShih, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung];
+    return [bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight];
 }
 
 export function checkActions() {
+    let startingCard = document.querySelector('.js_starting-card').checked;
     let attack = document.querySelector('.js_attack').checked;
     let block = document.querySelector('.js_block').checked;
     let heal = document.querySelector('.js_heal').checked;
     let directDamage = document.querySelector('.js_direct-damage').checked;
     let gainPower = document.querySelector('.js_gain-power').checked;
 
-    return [attack, block, heal, directDamage, gainPower];
+    return [startingCard, attack, block, heal, directDamage, gainPower];
 }

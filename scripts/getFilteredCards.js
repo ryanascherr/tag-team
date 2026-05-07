@@ -1,10 +1,13 @@
-export function getFighters(array, bodvar, chingShih, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung) {
+export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight) {
 
     if (!bodvar) {
         array = array.filter(card => card.fighter != "Bodvar");
     }
     if (!chingShih) {
         array = array.filter(card => card.fighter != "Ching Shih");
+    }
+    if (!excalibur) {
+        array = array.filter(card => card.fighter != "Excalibur");
     }
     if (!joan) {
         array = array.filter(card => card.fighter != "Joan");
@@ -36,12 +39,30 @@ export function getFighters(array, bodvar, chingShih, joan, mamanBrijit, mephist
     if (!wongFeiHung) {
         array = array.filter(card => card.fighter != "Wong Fei-Hung");
     }
+    if (!merlin) {
+        array = array.filter(card => card.fighter != "Merlin");
+    }
+    if (!morgan) {
+        array = array.filter(card => card.fighter != "Morgan");
+    }
+    if (!perceval) {
+        array = array.filter(card => card.fighter != "Perceval");
+    }
+    if (!theDragon) {
+        array = array.filter(card => card.fighter != "The Dragon");
+    }
+    if (!theGreenKnight) {
+        array = array.filter(card => card.fighter != "The Green Knight");
+    }
 
     return array;
 }
 
-export function getActions(array, attack, block, heal, directDamage, gainPower) {
+export function getActions(array, startingCard, attack, block, heal, directDamage, gainPower) {
 
+    if (startingCard) {
+        array = array.filter(card => card.isStartingCard === true);
+    }
     if (attack) {
         array = array.filter(card => card.hasAttack === true);
     }
