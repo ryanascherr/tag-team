@@ -59,7 +59,8 @@ export let fighters = [
                 hasPowerSelf: true,
                 hasDirectDamage: true,
                 hasHurtSelf: true,
-                hasConditional: true
+                hasConditional: true,
+                hasSelfHarm: true
             }
         ]
     },
@@ -155,21 +156,25 @@ export let fighters = [
                 hasDirectDamage: true,
                 hasGainPower: true,
                 hasUniqueIcon: true,
-                hasConditional: true
+                hasConditional: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Excalibur",
                 name: "Enchanted Scabbard",
                 hasDirectDamage: true,
                 hasBlock: true,
-                hasUniqueIcon: true
+                hasUniqueIcon: true,
+                hasReflect: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Excalibur",
                 name: "Pendragons Wrath",
                 hasDirectDamage: true,
                 hasAttack: true,
-                hasUniqueIcon: true
+                hasUniqueIcon: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Excalibur",
@@ -177,27 +182,32 @@ export let fighters = [
                 hasDirectDamage: true,
                 hasBlock: true,
                 hasGainPower: true,
-                hasUniqueIcon: true
+                hasUniqueIcon: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Excalibur",
                 name: "Unleashed!",
                 hasDirectDamage: true,
                 hasAttack: true,
-                hasUniqueIcon: true
+                hasUniqueIcon: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Excalibur",
                 name: "Unstable Aura",
                 hasHeal: true,
-                hasUniqueIcon: true
+                hasUniqueIcon: true,
+                hasReflect: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Excalibur",
                 name: "What Should Not Have Been Broken",
                 hasHeal: true,
                 hasDirectDamage: true,
-                hasUniqueIcon: true
+                hasUniqueIcon: true,
+                hasSelfHarm: true
             },
         ]
     },
@@ -249,7 +259,8 @@ export let fighters = [
                 name: "Chili Pepper Rum",
                 isStartingCard: true,
                 hasAttack: true,
-                hasDirectDamage: true
+                hasDirectDamage: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Maman Brijit",
@@ -261,13 +272,15 @@ export let fighters = [
                 fighter: "Maman Brijit",
                 name: "Sacrifice of Love",
                 hasDirectDamage: true,
-                hasHeal: true
+                hasHeal: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Maman Brijit",
                 name: "Soul Embrace",
                 hasDirectDamage: true,
-                hasGainPower: true
+                hasGainPower: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Maman Brijit",
@@ -277,7 +290,8 @@ export let fighters = [
             {
                 fighter: "Maman Brijit",
                 name: "You Are Mine",
-                hasBlock: true
+                hasBlock: true,
+                hasReflect: true
             }
         ]
     },
@@ -314,7 +328,8 @@ export let fighters = [
                 hasAttack: true,
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
-                hasConditional: true
+                hasConditional: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Mephisto",
@@ -346,7 +361,8 @@ export let fighters = [
                 fighter: "Merlin",
                 name: "Dark Ritual",
                 hasDirectDamage: true,
-                hasGainPower: true
+                hasGainPower: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Merlin",
@@ -504,7 +520,8 @@ export let fighters = [
                 fighter: "Morgan",
                 name: "The Enchantress",
                 hasBlock: true,
-                hasDirectDamage: true
+                hasDirectDamage: true,
+                hasSelfHarm: true
             },
         ]
     },
@@ -588,7 +605,8 @@ export let fighters = [
             {
                 fighter: "Shango",
                 name: "Lightning Strike",
-                hasAttack: true
+                hasAttack: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "Shango",
@@ -710,7 +728,8 @@ export let fighters = [
                 hasAttack: true,
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
-                hasConditional: true
+                hasConditional: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "The Golem",
@@ -773,7 +792,8 @@ export let fighters = [
                 fighter: "The Green Knight",
                 name: "The Mighty Battleaxe",
                 hasAttack: true,
-                hasDirectDamage: true
+                hasDirectDamage: true,
+                hasSelfHarm: true
             },
         ]
     },
@@ -819,7 +839,8 @@ export let fighters = [
                 hasAttack: true,
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
-                hasConditional: true
+                hasConditional: true,
+                hasSelfHarm: true
             },
             {
                 fighter: "The Wild Bunch",

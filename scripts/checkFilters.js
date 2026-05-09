@@ -33,6 +33,8 @@ export function checkActions() {
     let conditional = document.querySelector('.js_conditional').checked;
     let winCondition = document.querySelector('.js_win-condition').checked;
     let affectsStartingCard = document.querySelector('.js_affects-starting-card').checked;
+    let reflect = document.querySelector('.js_reflect').checked;
+    let selfHarm = document.querySelector('.js_self-harm').checked;
 
-    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard];
+    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard, reflect, selfHarm];
 }
