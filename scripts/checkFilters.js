@@ -28,6 +28,11 @@ export function checkActions() {
     let heal = document.querySelector('.js_heal').checked;
     let directDamage = document.querySelector('.js_direct-damage').checked;
     let gainPower = document.querySelector('.js_gain-power').checked;
+    let uniqueIcon = document.querySelector('.js_unique-icon').checked;
+    let cancel = document.querySelector('.js_cancel').checked;
+    let conditional = document.querySelector('.js_conditional').checked;
+    let winCondition = document.querySelector('.js_win-condition').checked;
+    let affectsStartingCard = document.querySelector('.js_affects-starting-card').checked;
 
-    return [startingCard, attack, block, heal, directDamage, gainPower];
+    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard];
 }

@@ -58,7 +58,7 @@ export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrij
     return array;
 }
 
-export function getActions(array, startingCard, attack, block, heal, directDamage, gainPower) {
+export function getActions(array, startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard) {
 
     if (startingCard) {
         array = array.filter(card => card.isStartingCard === true);
@@ -77,6 +77,21 @@ export function getActions(array, startingCard, attack, block, heal, directDamag
     }
     if (gainPower) {
         array = array.filter(card => card.hasGainPower === true);
+    }
+    if (uniqueIcon) {
+        array = array.filter(card => card.hasUniqueIcon === true);
+    }
+    if (cancel) {
+        array = array.filter(card => card.hasCancel === true);
+    }
+    if (conditional) {
+        array = array.filter(card => card.hasConditional === true);
+    }
+    if (winCondition) {
+        array = array.filter(card => card.hasWinCondition === true);
+    }
+    if (affectsStartingCard) {
+        array = array.filter(card => card.affectsStartingCard === true);
     }
 
     return array;

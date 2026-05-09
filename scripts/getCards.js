@@ -6,11 +6,11 @@ export function getCards() {
     let array = cardArray;
     
     let [bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight] = checkFighters();
-    let [attack, block, heal, directDamage, gainPower] = checkActions();
+    let [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard] = checkActions();
         
     array = getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, excalibur, merlin, morgan, perceval, theDragon, theGreenKnight);
 
-    array = getActions(array, attack, block, heal, directDamage, gainPower);
+    array = getActions(array, startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard);
 
     return array;
 }
