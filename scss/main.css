@@ -1,3 +1,7 @@
+:root {
+  --primary: #7A5E88;
+}
+
 body {
   padding: 1rem;
   margin: 0;
@@ -6,18 +10,23 @@ body {
   margin: 0 auto;
 }
 
+hr {
+  color: var(--primary);
+}
+
 .btn {
-  border: 2px solid #411928;
-  background-color: #411928;
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
   color: #fff;
   border-radius: 0.5rem;
   padding: 0.5rem;
   transition: all 0.25s;
+  font-weight: bold;
 }
 .btn:hover {
   cursor: pointer;
   background-color: #fff;
-  color: #411928;
+  color: var(--primary);
 }
 
 .cards-container {
@@ -89,8 +98,7 @@ body {
 .filters__filter {
   border: 2px solid #411928;
   border-radius: 1rem;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 0.75rem;
   margin-bottom: 1rem;
 }
 .filters__title {
@@ -104,7 +112,7 @@ body {
   padding-left: 0;
   grid-template-columns: 1fr 1fr;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 620px) {
   .filters__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -119,7 +127,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1200px) {
   .filters__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -131,6 +139,9 @@ body {
 }
 .filters__input {
   margin: 0 0.25rem 0 0;
+}
+.filters__input[type=checkbox] {
+  accent-color: var(--primary);
 }
 .filters__input:hover {
   cursor: pointer;

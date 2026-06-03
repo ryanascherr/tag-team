@@ -172,7 +172,6 @@ export let fighters = [
                 copies: 1,
                 affectsFriendlyAlly: true,
                 hasDirectDamage: true,
-                hasBlock: true,
                 hasUniqueIcon: true,
                 hasReflect: true,
                 hasSelfHarm: true
@@ -1084,7 +1083,6 @@ fighters.forEach((fighter, index, array) => {
 
 displayResultsCount();
 function displayResultsCount() {
-    console.log("Displaying results count");
     let resultCount = cardsContainer.childElementCount;
     let resultsElem = document.querySelector(".js_results-number");
     resultsElem.textContent = resultCount + " Cards Found";
