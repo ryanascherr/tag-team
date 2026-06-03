@@ -35,6 +35,8 @@ export function checkActions() {
     let affectsStartingCard = document.querySelector('.js_affects-starting-card').checked;
     let reflect = document.querySelector('.js_reflect').checked;
     let selfHarm = document.querySelector('.js_self-harm').checked;
+    let single = document.querySelector('.js_single').checked;
+    let multiple = document.querySelector('.js_multiple').checked;
 
-    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard, reflect, selfHarm];
+    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard, reflect, selfHarm, single, multiple];
 }

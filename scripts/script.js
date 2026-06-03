@@ -152,6 +152,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "Sword of Destiny",
+                copies: 1,
                 isStartingCard: true,
                 hasDirectDamage: true,
                 hasGainPower: true,
@@ -162,6 +163,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "Enchanted Scabbard",
+                copies: 1,
                 hasDirectDamage: true,
                 hasBlock: true,
                 hasUniqueIcon: true,
@@ -171,6 +173,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "Pendragons Wrath",
+                copies: 2,
                 hasDirectDamage: true,
                 hasAttack: true,
                 hasUniqueIcon: true,
@@ -179,6 +182,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "Steel on Steel",
+                copies: 2,
                 hasDirectDamage: true,
                 hasBlock: true,
                 hasGainPower: true,
@@ -188,6 +192,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "Unleashed!",
+                copies: 1,
                 hasDirectDamage: true,
                 hasAttack: true,
                 hasUniqueIcon: true,
@@ -196,6 +201,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "Unstable Aura",
+                copies: 2,
                 hasHeal: true,
                 hasUniqueIcon: true,
                 hasReflect: true,
@@ -204,6 +210,7 @@ export let fighters = [
             {
                 fighter: "Excalibur",
                 name: "What Should Not Have Been Broken",
+                copies: 1,
                 hasHeal: true,
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
@@ -220,29 +227,34 @@ export let fighters = [
             {
                 fighter: "Joan",
                 name: "Dieu Premier Servi",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Joan",
                 name: "Divine Vision",
+                copies: 2,
                 hasHeal: true,
             },
             {
                 fighter: "Joan",
                 name: "Hand of the Righteous",
+                copies: 2,
                 hasAttack: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Joan",
                 name: "Holy Shield",
+                copies: 3,
                 hasBlock: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Joan",
                 name: "Sword of St Michael",
+                copies: 2,
                 hasAttack: true,
                 hasHeal: true,
             }
@@ -257,6 +269,7 @@ export let fighters = [
             {
                 fighter: "Maman Brijit",
                 name: "Chili Pepper Rum",
+                copies: 2,
                 isStartingCard: true,
                 hasAttack: true,
                 hasDirectDamage: true,
@@ -265,12 +278,14 @@ export let fighters = [
             {
                 fighter: "Maman Brijit",
                 name: "Eternal Youth",
+                copies: 1,
                 hasCancel: true,
                 hasConditional: true
             },
             {
                 fighter: "Maman Brijit",
                 name: "Sacrifice of Love",
+                copies: 1,
                 hasDirectDamage: true,
                 hasHeal: true,
                 hasSelfHarm: true
@@ -278,6 +293,7 @@ export let fighters = [
             {
                 fighter: "Maman Brijit",
                 name: "Soul Embrace",
+                copies: 2,
                 hasDirectDamage: true,
                 hasGainPower: true,
                 hasSelfHarm: true
@@ -285,11 +301,13 @@ export let fighters = [
             {
                 fighter: "Maman Brijit",
                 name: "The Black Rooster",
+                copies: 2,
                 hasCancel: true
             },
             {
                 fighter: "Maman Brijit",
                 name: "You Are Mine",
+                copies: 2,
                 hasBlock: true,
                 hasReflect: true
             }
@@ -303,6 +321,7 @@ export let fighters = [
             {
                 fighter: "Mephisto",
                 name: "Twin Serpents",
+                copies: 3,
                 isStartingCard: true,
                 hasAttack: true,
                 hasGainPower: true,
@@ -312,12 +331,14 @@ export let fighters = [
             {
                 fighter: "Mephisto",
                 name: "Drag You to Hell",
+                copies: 1,
                 hasConditional: true,
                 hasWinCondition: true
             },
             {
                 fighter: "Mephisto",
                 name: "Fury of the Damned",
+                copies: 1,
                 hasDirectDamage: true,
                 hasConditional: true,
                 affectsStartingCard: true
@@ -325,6 +346,7 @@ export let fighters = [
             {
                 fighter: "Mephisto",
                 name: "Serpent of the Pit",
+                copies: 2,
                 hasAttack: true,
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
@@ -334,6 +356,7 @@ export let fighters = [
             {
                 fighter: "Mephisto",
                 name: "Serpent of the Void",
+                copies: 2,
                 hasHeal: true,
                 hasUniqueIcon: true,
                 hasConditional: true
@@ -341,6 +364,7 @@ export let fighters = [
             {
                 fighter: "Mephisto",
                 name: "Soul Siphon",
+                copies: 1,
                 hasBlock: true,
                 hasHeal: true
             }
@@ -354,12 +378,14 @@ export let fighters = [
             {
                 fighter: "Merlin",
                 name: "Master of Order and Chaos",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Merlin",
                 name: "Dark Ritual",
+                copies: 2,
                 hasDirectDamage: true,
                 hasGainPower: true,
                 hasSelfHarm: true
@@ -367,16 +393,19 @@ export let fighters = [
             {
                 fighter: "Merlin",
                 name: "Student of the Ancient Knowledge",
+                copies: 3,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Merlin",
                 name: "The Standing Stones",
+                copies: 2,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Merlin",
                 name: "Word in the Forgotten Tongue",
+                copies: 2,
                 hasUniqueIcon: true
             },
         ]
@@ -389,22 +418,26 @@ export let fighters = [
             {
                 fighter: "Milady",
                 name: "Dressed to Kill",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Milady",
                 name: "Checkmate",
+                copies: 2,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Milady",
                 name: "I Keep My Friends Close",
+                copies: 1,
                 hasHeal: true
             },
             {
                 fighter: "Milady",
                 name: "Licking My Wounds",
+                copies: 2,
                 hasHeal: true,
                 hasUniqueIcon: true,
                 hasConditional: true
@@ -412,12 +445,14 @@ export let fighters = [
             {
                 fighter: "Milady",
                 name: "So Predictable",
+                copies: 2,
                 hasBlock: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Milady",
                 name: "What Doesnt Kill You Makes Me Stronger",
+                copies: 1,
                 hasAttack: true,
                 hasGainPower: true,
                 hasConditional: true
@@ -425,6 +460,7 @@ export let fighters = [
             {
                 fighter: "Milady",
                 name: "With a Stab and a Smile",
+                copies: 1,
                 hasAttack: true,
                 hasUniqueIcon: true,
                 hasConditional: true
@@ -439,6 +475,7 @@ export let fighters = [
             {
                 fighter: "Mordred",
                 name: "Dark Power",
+                copies: 1,
                 isStartingCard: true,
                 hasAttack: true,
                 hasGainPower: true,
@@ -447,24 +484,28 @@ export let fighters = [
             {
                 fighter: "Mordred",
                 name: "Cloak of Shadow",
+                copies: 3,
                 hasBlock: true,
                 hasHeal: true
             },
             {
                 fighter: "Mordred",
                 name: "Execution",
+                copies: 1,
                 hasDirectDamage: true,
                 hasConditional: true
             },
             {
                 fighter: "Mordred",
                 name: "Hidden Dagger",
+                copies: 3,
                 hasAttack: true,
                 hasConditional: true
             },
             {
                 fighter: "Mordred",
                 name: "Vicious Riposte",
+                copies: 2,
                 hasAttack: true,
                 hasBlock: true
             }
@@ -478,6 +519,7 @@ export let fighters = [
             {
                 fighter: "Morgan",
                 name: "My Eyes See All",
+                copies: 1,
                 isStartingCard: true,
                 hasGainPower: true,
                 hasConditional: true,
@@ -486,12 +528,14 @@ export let fighters = [
             {
                 fighter: "Morgan",
                 name: "Channel Power",
+                copies: 2,
                 hasBlock: true,
                 hasGainPower: true
             },
             {
                 fighter: "Morgan",
                 name: "Crowsclaw Charm",
+                copies: 1,
                 hasBlock: true,
                 hasHeal: true,
                 hasHealAlly: true
@@ -499,12 +543,14 @@ export let fighters = [
             {
                 fighter: "Morgan",
                 name: "Deadly Diversion",
+                copies: 1,
                 hasAttack: true,
                 hasCancel: true
             },
             {
                 fighter: "Morgan",
                 name: "Magical Mirror",
+                copies: 2,
                 hasGainPower: true,
                 hasAttack: true,
                 hasConditional: true
@@ -512,6 +558,7 @@ export let fighters = [
             {
                 fighter: "Morgan",
                 name: "Spiral of Life",
+                copies: 2,
                 hasHeal: true,
                 hasHealBoth: true,
                 hasConditional: true
@@ -519,6 +566,7 @@ export let fighters = [
             {
                 fighter: "Morgan",
                 name: "The Enchantress",
+                copies: 1,
                 hasBlock: true,
                 hasDirectDamage: true,
                 hasSelfHarm: true
@@ -533,6 +581,7 @@ export let fighters = [
             {
                 fighter: "Perceval",
                 name: "The Questing Knight",
+                copies: 1,
                 isStartingCard: true,
                 hasAttack: true,
                 hasBlock: true,
@@ -541,6 +590,7 @@ export let fighters = [
             {
                 fighter: "Perceval",
                 name: "Act of Chivalry",
+                copies: 2,
                 hasBlock: true,
                 hasHeal: true,
                 hasHealBoth: true,
@@ -549,23 +599,27 @@ export let fighters = [
             {
                 fighter: "Perceval",
                 name: "Coup de Grace",
+                copies: 2,
                 hasAttack: true,
                 hasConditional: true
             },
             {
                 fighter: "Perceval",
                 name: "Quest for the Holy Grail",
+                copies: 1,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Perceval",
                 name: "The Bleeding Lance",
+                copies: 1,
                 hasAttack: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "Perceval",
                 name: "The Quest Begins",
+                copies: 2,
                 hasAttack: true,
                 hasHeal: true,
                 hasUniqueIcon: true,
@@ -574,6 +628,7 @@ export let fighters = [
             {
                 fighter: "Perceval",
                 name: "Vision of the Grail",
+                copies: 1,
                 hasGainPower: true
             },
         ]
@@ -586,6 +641,7 @@ export let fighters = [
             {
                 fighter: "Shango",
                 name: "Aflame!",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true,
                 hasWinCondition: true
@@ -593,6 +649,7 @@ export let fighters = [
             {
                 fighter: "Shango",
                 name: "Breath of Fire",
+                copies: 3,
                 hasAttack: true,
                 hasUniqueIcon: true,
                 hasWinCondition: true
@@ -600,22 +657,26 @@ export let fighters = [
             {
                 fighter: "Shango",
                 name: "Cauterize",
+                copies: 1,
                 hasHeal: true
             },
             {
                 fighter: "Shango",
                 name: "Lightning Strike",
+                copies: 2,
                 hasAttack: true,
                 hasSelfHarm: true
             },
             {
                 fighter: "Shango",
                 name: "Thunder Stone",
+                copies: 1,
                 hasGainPower: true
             },
             {
                 fighter: "Shango",
                 name: "Wall of Flame",
+                copies: 2,
                 hasBlock: true,
                 hasGainPower: true
             }
@@ -629,24 +690,28 @@ export let fighters = [
             {
                 fighter: "The Dragon",
                 name: "Hide of Iron",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Dragon",
                 name: "Dragonfire",
+                copies: 2,
                 hasAttack: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Dragon",
                 name: "In the Heart of the Mountain",
+                copies: 2,
                 hasBlock: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Dragon",
                 name: "Soul of the Wyrm",
+                copies: 2,
                 hasGainPower: true,
                 hasUniqueIcon: true,
                 hasConditional: true
@@ -654,12 +719,14 @@ export let fighters = [
             {
                 fighter: "The Dragon",
                 name: "Tail Slash",
+                copies: 2,
                 hasAttack: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Dragon",
                 name: "Under My Wing",
+                copies: 1,
                 hasHeal: true,
                 hasHealAlly: true,
                 hasUniqueIcon: true
@@ -674,6 +741,7 @@ export let fighters = [
             {
                 fighter: "The Fey Folk",
                 name: "All Legends Must Pass",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true,
                 hasConditional: true,
@@ -682,35 +750,41 @@ export let fighters = [
             {
                 fighter: "The Fey Folk",
                 name: "Entanglement",
+                copies: 2,
                 hasCancel: true
             },
             {
                 fighter: "The Fey Folk",
                 name: "Fairy Ring",
+                copies: 2,
                 hasHeal: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Fey Folk",
                 name: "Spirit Storm",
+                copies: 2,
                 hasAttack: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Fey Folk",
                 name: "Summoning Leshi",
+                copies: 1,
                 hasBlock: true,
                 hasGainPower: true
             },
             {
                 fighter: "The Fey Folk",
                 name: "Summoning Redcap",
+                copies: 1,
                 hasAttack: true,
                 hasBlock: true
             },
             {
                 fighter: "The Fey Folk",
                 name: "Summoning The Green Man",
+                copies: 1,
                 hasBlock: true,
                 hasHeal: true
             }
@@ -724,6 +798,7 @@ export let fighters = [
             {
                 fighter: "The Golem",
                 name: "Protect the Innocent",
+                copies: 2,
                 isStartingCard: true,
                 hasAttack: true,
                 hasDirectDamage: true,
@@ -734,21 +809,25 @@ export let fighters = [
             {
                 fighter: "The Golem",
                 name: "Fist of Clay",
+                copies: 3,
                 hasAttack: true
             },
             {
                 fighter: "The Golem",
                 name: "Heal the Wounded",
+                copies: 2,
                 hasHeal: true
             },
             {
                 fighter: "The Golem",
-                name: "Reanimation"
+                name: "Reanimation",
+                copies: 1,
             },
             {
                 fighter: "The Golem",
                 name: "Self Sacrifice",
-                hasGainPower: true
+                hasGainPower: true,
+                copies: 2,
             }
         ]
     },
@@ -760,24 +839,28 @@ export let fighters = [
             {
                 fighter: "The Green Knight",
                 name: "The Greenwood Sap",
+                copies: 1,
                 isStartingCard: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Green Knight",
                 name: "A Blow for a Blow",
+                copies: 2,
                 hasAttack: true,
                 hasConditional: true
             },
             {
                 fighter: "The Green Knight",
                 name: "Donning the Greenwood Mask",
+                copies: 2,
                 hasGainPower: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Green Knight",
                 name: "The Green Chapel",
+                copies: 2,
                 hasHeal: true,
                 hasHealAlly: true,
                 hasConditional: true
@@ -785,12 +868,14 @@ export let fighters = [
             {
                 fighter: "The Green Knight",
                 name: "The Might of the Greenwood",
+                copies: 1,
                 hasAttack: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Green Knight",
                 name: "The Mighty Battleaxe",
+                copies: 2,
                 hasAttack: true,
                 hasDirectDamage: true,
                 hasSelfHarm: true
@@ -805,6 +890,7 @@ export let fighters = [
             {
                 fighter: "The Wild Bunch",
                 name: "Corrupted Lawman",
+                copies: 1,
                 isStartingCard: true,
                 hasAttack: true,
                 hasGainPower: true,
@@ -814,28 +900,33 @@ export let fighters = [
             {
                 fighter: "The Wild Bunch",
                 name: "Back to the Hideout",
+                copies: 1,
                 hasHeal: true
             },
             {
                 fighter: "The Wild Bunch",
                 name: "Bribe",
+                copies: 2,
                 hasBlock: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Wild Bunch",
                 name: "Keys to the Armory",
+                copies: 1,
                 hasGainPower: true,
                 hasUniqueIcon: true
             },
             {
                 fighter: "The Wild Bunch",
                 name: "Outlaw Doc",
+                copies: 2,
                 hasHeal: true
             },
             {
                 fighter: "The Wild Bunch",
                 name: "Sheriffs Personal Gatling Gun",
+                copies: 1,
                 hasAttack: true,
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
@@ -845,6 +936,7 @@ export let fighters = [
             {
                 fighter: "The Wild Bunch",
                 name: "We Aint Here to Talk",
+                copies: 2,
                 hasAttack: true
             }
         ]
@@ -857,6 +949,7 @@ export let fighters = [
             {
                 fighter: "Wong Fei-Hung",
                 name: "The Harder They Fall",
+                copies: 2,
                 isStartingCard: true,
                 hasAttack: true,
                 hasUniqueIcon: true,
@@ -865,27 +958,32 @@ export let fighters = [
             {
                 fighter: "Wong Fei-Hung",
                 name: "Chi Focus",
+                copies: 1,
                 hasHeal: true,
                 hasGainPower: true
             },
             {
                 fighter: "Wong Fei-Hung",
-                name: "Crippling Touch"
+                name: "Crippling Touch",
+                copies: 2,
             },
             {
                 fighter: "Wong Fei-Hung",
                 name: "Ging Balance",
+                copies: 2,
                 hasBlock: true,
-                hasGainPower: true
+                hasGainPower: true,
             },
             {
                 fighter: "Wong Fei-Hung",
                 name: "Ging Bridge",
-                hasGainPower: true
+                copies: 1,
+                hasGainPower: true,
             },
             {
                 fighter: "Wong Fei-Hung",
                 name: "Tiger Fist",
+                copies: 2,
                 hasAttack: true,
                 hasGainPower: true
             },

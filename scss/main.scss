@@ -2,6 +2,8 @@ body {
     padding: 1rem;
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
     // background-image: url('../img/tt-bg-purple.jpg');
     // background-size: cover;
     // background-repeat: no-repeat;
@@ -10,11 +12,16 @@ body {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     gap: 1rem;
 
     img {
         max-width: 100%;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -93,6 +100,22 @@ body {
         margin: 0;
         padding-left: 0;
         grid-template-columns: 1fr 1fr;
+
+        @media screen and (min-width: 600px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media screen and (min-width: 800px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @media screen and (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (min-width: 1150px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
     &__list-item {
@@ -103,6 +126,16 @@ body {
 
     &__input {
         margin: 0 .25rem 0 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__label {
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__btn-container {
@@ -113,9 +146,9 @@ body {
             margin: .5rem;
         }
     }
-}
 
-.character-icon {
-    max-height: 25px;
-    margin-left: .25rem;
+    &__icon {
+        max-height: 25px;
+        margin-left: .25rem;
+    }
 }
