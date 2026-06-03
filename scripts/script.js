@@ -900,6 +900,7 @@ import { openModal, closeModal } from './modalControl.js';
 export let cardArray = [];
 
 let allInputs = document.querySelectorAll(".js_criteria");
+let fighterInputs = document.querySelectorAll(".js_fighter");
 allInputs.forEach((input, index, array) => {
     input.addEventListener('change', function() {
         let array = getCards();
@@ -938,8 +939,6 @@ fighters.forEach((fighter, index, array) => {
     });
 });
 
-
-
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("card")) {
         let card = event.target;
@@ -959,3 +958,33 @@ document.body.addEventListener('click', function(event) {
 //         closeModal();
 //     }
 // });
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_clear-set")) {
+        clearFighters();
+    }
+});
+
+function clearFighters() {
+    fighterInputs.forEach((input) => {
+        input.checked = false;
+    });
+
+    let array = getCards();
+    placeCards(array);
+}
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_check-set")) {
+        checkFighters();
+    }
+});
+
+function checkFighters() {
+    fighterInputs.forEach((input) => {
+        input.checked = true;
+    });
+
+    let array = getCards();
+    placeCards(array);
+}

@@ -54,6 +54,7 @@ export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrij
     if (!theGreenKnight) {
         array = array.filter(card => card.fighter != "The Green Knight");
     }
+    console.log(theGreenKnight);
 
     return array;
 }

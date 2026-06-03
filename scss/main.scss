@@ -1,15 +1,16 @@
 body {
     padding: 1rem;
     margin: 0;
-    background-image: url('../img/tt-bg-purple.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    // background-image: url('../img/tt-bg-purple.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
 }
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
 
     img {
@@ -64,4 +65,57 @@ body {
         background-color: black;
         color: white;
     }
+}
+
+.filters {
+    @media screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    &__filter {
+        border: 2px solid #411928;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    &__list {
+        display: grid;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__list-item {
+        margin: .25rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        margin: 0 .25rem 0 0;
+    }
+
+    &__btn-container {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            margin: .5rem;
+        }
+    }
+}
+
+.character-icon {
+    max-height: 25px;
+    margin-left: .25rem;
 }
