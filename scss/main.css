@@ -6,10 +6,25 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  border: 2px solid #411928;
+  background-color: #411928;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: all 0.25s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #411928;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   gap: 1rem;
+  margin-top: 1rem;
 }
 .cards-container img {
   max-width: 100%;
@@ -133,4 +148,10 @@ body {
 .filters__icon {
   max-height: 25px;
   margin-left: 0.25rem;
+}
+
+.results-box {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }/*# sourceMappingURL=main.css.map */

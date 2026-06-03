@@ -73,27 +73,27 @@
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_fighter js_the-dragon" checked type="checkbox" id="the-dragon" name="checkbox" value="1">
-                    <label class="filters__label" for="the-dragon">The Dragon</label>
+                    <label class="filters__label" for="the-dragon">Dragon</label>
                     <img class="filters__icon" src="./img/the-dragon/icon_the-dragon.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_fighter js_the-fey-folk" checked type="checkbox" id="the-fey-folk" name="checkbox" value="1">
-                    <label class="filters__label" for="the-fey-folk">The Fey Folk</label>
+                    <label class="filters__label" for="the-fey-folk">Fey Folk</label>
                     <img class="filters__icon" src="./img/the-fey-folk/icon_the-fey-folk.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_fighter js_the-golem" checked type="checkbox" id="the-golem" name="checkbox" value="1">
-                    <label class="filters__label" for="the-golem">The Golem</label>
+                    <label class="filters__label" for="the-golem">Golem</label>
                     <img class="filters__icon" src="./img/the-golem/icon_the-golem.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_fighter js_the-green-knight" checked type="checkbox" id="the-green-knight" name="checkbox" value="1">
-                    <label class="filters__label" for="the-green-knight">The Green Knight</label>
+                    <label class="filters__label" for="the-green-knight">Green Knight</label>
                     <img class="filters__icon" src="./img/the-green-knight/icon_the-green-knight.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_fighter js_the-wild-bunch" checked type="checkbox" id="the-wild-bunch" name="checkbox" value="1">
-                    <label class="filters__label" for="the-wild-bunch">The Wild Bunch</label>
+                    <label class="filters__label" for="the-wild-bunch">Wild Bunch</label>
                     <img class="filters__icon" src="./img/the-wild-bunch/icon_the-wild-bunch.png" alt="">
                 </li>
                 <li class="filters__list-item">
@@ -132,14 +132,19 @@
                     <img class="filters__icon" src="./img/icons/icon_heal.png" alt="">
                 </li>
                 <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_action js_gain-power" type="checkbox" id="gain-power" name="checkbox" value="1">
+                    <label class="filters__label" for="gain-power">Gain Power</label>
+                    <img class="filters__icon" src="./img/icons/icons_power.png" alt="">
+                </li>
+                <li class="filters__list-item">
                     <input class="filters__input js_criteria js_action js_direct-damage" type="checkbox" id="direct-damage" name="checkbox" value="1">
                     <label class="filters__label" for="direct-damage">Direct Damage</label>
                     <img class="filters__icon" src="./img/icons/icon_direct-damage.png" alt="">
                 </li>
                 <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_gain-power" type="checkbox" id="gain-power" name="checkbox" value="1">
-                    <label class="filters__label" for="gain-power">Gain Power</label>
-                    <img class="filters__icon" src="./img/icons/icons_power.png" alt="">
+                    <input class="filters__input js_criteria js_action js_cancel" type="checkbox" id="cancel" name="checkbox" value="1">
+                    <label class="filters__label" for="cancel">Cancel</label>
+                    <img class="filters__icon" src="./img/icons/icon_cancel.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_action js_unique-icon" type="checkbox" id="unique-icon" name="checkbox" value="1">
@@ -147,9 +152,14 @@
                     <img class="filters__icon" src="./img/icons/icon_unique.png" alt="">
                 </li>
                 <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_cancel" type="checkbox" id="cancel" name="checkbox" value="1">
-                    <label class="filters__label" for="cancel">Cancel</label>
-                    <img class="filters__icon" src="./img/icons/icon_cancel.png" alt="">
+                    <input class="filters__input js_criteria js_action js_friendly-ally" type="checkbox" id="friendly-ally" name="checkbox" value="1">
+                    <label class="filters__label" for="friendly-ally">Friendly Ally</label>
+                    <img class="filters__icon" src="./img/icons/icon_ally-partner.png" alt="">
+                </li>
+                <li class="filters__list-item">
+                    <input class="filters__input js_criteria js_action js_opponent-ally" type="checkbox" id="opponent-ally" name="checkbox" value="1">
+                    <label class="filters__label" for="opponent-ally">Opponent's Ally</label>
+                    <img class="filters__icon" src="./img/icons/icon_opponent-partner.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_action js_conditional" type="checkbox" id="conditional" name="checkbox" value="1">
@@ -159,6 +169,7 @@
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_action js_win-condition" type="checkbox" id="win-condition" name="checkbox" value="1">
                     <label class="filters__label" for="win-condition">Win/Lose Condition</label>
+                    <img class="filters__icon" src="./img/icons/icon_ko.png" alt="">
                 </li>
                 <li class="filters__list-item">
                     <input class="filters__input js_criteria js_action js_affects-starting-card" type="checkbox" id="affects-starting-card" name="checkbox" value="1">
@@ -186,6 +197,9 @@
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="results-box">
+        <span class="js_results-number"></div>
     </div>
     <div class="cards-container"></div>
 

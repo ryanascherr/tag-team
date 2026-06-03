@@ -19,6 +19,7 @@ export let fighters = [
                 fighter: "Bodvar",
                 name: "Berserk!",
                 copies: 2,
+                affectsOpponentAlly: true,
                 hasAttack: true,
                 hasAttackPartner: true,
                 hasAttackBoth: true,
@@ -29,6 +30,7 @@ export let fighters = [
                 fighter: "Bodvar",
                 name: "Blood Ties",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasAttack: true,
                 hasHeal: true,
                 hasHealAlly: true,
@@ -86,6 +88,7 @@ export let fighters = [
                 fighter: "Ching Shih",
                 name: "Gunpowder Wine",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
                 hasHealAlly: true,
                 hasHealBoth: true,
@@ -111,6 +114,7 @@ export let fighters = [
                 fighter: "Ching Shih",
                 name: "Raiding Party",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasGainPower: true,
                 hasPowerAlly: true,
                 hasUniqueIcon: true,
@@ -120,6 +124,7 @@ export let fighters = [
                 fighter: "Ching Shih",
                 name: "Revenge of the Red Flag Fleet",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasAttack: true,
                 hasPartnerAttack: true,
                 hasAttackBoth: true,
@@ -153,6 +158,7 @@ export let fighters = [
                 fighter: "Excalibur",
                 name: "Sword of Destiny",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 isStartingCard: true,
                 hasDirectDamage: true,
                 hasGainPower: true,
@@ -164,6 +170,7 @@ export let fighters = [
                 fighter: "Excalibur",
                 name: "Enchanted Scabbard",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasDirectDamage: true,
                 hasBlock: true,
                 hasUniqueIcon: true,
@@ -174,6 +181,7 @@ export let fighters = [
                 fighter: "Excalibur",
                 name: "Pendragons Wrath",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasDirectDamage: true,
                 hasAttack: true,
                 hasUniqueIcon: true,
@@ -183,6 +191,7 @@ export let fighters = [
                 fighter: "Excalibur",
                 name: "Steel on Steel",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasDirectDamage: true,
                 hasBlock: true,
                 hasGainPower: true,
@@ -193,6 +202,7 @@ export let fighters = [
                 fighter: "Excalibur",
                 name: "Unleashed!",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasDirectDamage: true,
                 hasAttack: true,
                 hasUniqueIcon: true,
@@ -202,6 +212,7 @@ export let fighters = [
                 fighter: "Excalibur",
                 name: "Unstable Aura",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
                 hasUniqueIcon: true,
                 hasReflect: true,
@@ -235,6 +246,7 @@ export let fighters = [
                 fighter: "Joan",
                 name: "Divine Vision",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
             },
             {
@@ -286,6 +298,7 @@ export let fighters = [
                 fighter: "Maman Brijit",
                 name: "Sacrifice of Love",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasDirectDamage: true,
                 hasHeal: true,
                 hasSelfHarm: true
@@ -294,6 +307,7 @@ export let fighters = [
                 fighter: "Maman Brijit",
                 name: "Soul Embrace",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasDirectDamage: true,
                 hasGainPower: true,
                 hasSelfHarm: true
@@ -400,6 +414,7 @@ export let fighters = [
                 fighter: "Merlin",
                 name: "The Standing Stones",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasUniqueIcon: true
             },
             {
@@ -432,6 +447,7 @@ export let fighters = [
                 fighter: "Milady",
                 name: "I Keep My Friends Close",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasHeal: true
             },
             {
@@ -529,6 +545,7 @@ export let fighters = [
                 fighter: "Morgan",
                 name: "Channel Power",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasBlock: true,
                 hasGainPower: true
             },
@@ -536,6 +553,7 @@ export let fighters = [
                 fighter: "Morgan",
                 name: "Crowsclaw Charm",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasBlock: true,
                 hasHeal: true,
                 hasHealAlly: true
@@ -559,6 +577,7 @@ export let fighters = [
                 fighter: "Morgan",
                 name: "Spiral of Life",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
                 hasHealBoth: true,
                 hasConditional: true
@@ -591,6 +610,7 @@ export let fighters = [
                 fighter: "Perceval",
                 name: "Act of Chivalry",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasBlock: true,
                 hasHeal: true,
                 hasHealBoth: true,
@@ -658,12 +678,15 @@ export let fighters = [
                 fighter: "Shango",
                 name: "Cauterize",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasHeal: true
             },
             {
                 fighter: "Shango",
                 name: "Lightning Strike",
                 copies: 2,
+                affectsFriendlyAlly: true,
+                affectsOpponentAlly: true,
                 hasAttack: true,
                 hasSelfHarm: true
             },
@@ -671,12 +694,14 @@ export let fighters = [
                 fighter: "Shango",
                 name: "Thunder Stone",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasGainPower: true
             },
             {
                 fighter: "Shango",
                 name: "Wall of Flame",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasBlock: true,
                 hasGainPower: true
             }
@@ -712,6 +737,7 @@ export let fighters = [
                 fighter: "The Dragon",
                 name: "Soul of the Wyrm",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasGainPower: true,
                 hasUniqueIcon: true,
                 hasConditional: true
@@ -726,6 +752,7 @@ export let fighters = [
             {
                 fighter: "The Dragon",
                 name: "Under My Wing",
+                affectsFriendlyAlly: true,
                 copies: 1,
                 hasHeal: true,
                 hasHealAlly: true,
@@ -757,6 +784,7 @@ export let fighters = [
                 fighter: "The Fey Folk",
                 name: "Fairy Ring",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
                 hasUniqueIcon: true
             },
@@ -771,6 +799,7 @@ export let fighters = [
                 fighter: "The Fey Folk",
                 name: "Summoning Leshi",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasBlock: true,
                 hasGainPower: true
             },
@@ -778,6 +807,7 @@ export let fighters = [
                 fighter: "The Fey Folk",
                 name: "Summoning Redcap",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasAttack: true,
                 hasBlock: true
             },
@@ -785,6 +815,7 @@ export let fighters = [
                 fighter: "The Fey Folk",
                 name: "Summoning The Green Man",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasBlock: true,
                 hasHeal: true
             }
@@ -816,6 +847,7 @@ export let fighters = [
                 fighter: "The Golem",
                 name: "Heal the Wounded",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasHeal: true
             },
             {
@@ -827,6 +859,7 @@ export let fighters = [
                 fighter: "The Golem",
                 name: "Self Sacrifice",
                 hasGainPower: true,
+                affectsFriendlyAlly: true,
                 copies: 2,
             }
         ]
@@ -854,6 +887,7 @@ export let fighters = [
                 fighter: "The Green Knight",
                 name: "Donning the Greenwood Mask",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasGainPower: true,
                 hasUniqueIcon: true
             },
@@ -861,6 +895,7 @@ export let fighters = [
                 fighter: "The Green Knight",
                 name: "The Green Chapel",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
                 hasHealAlly: true,
                 hasConditional: true
@@ -901,6 +936,7 @@ export let fighters = [
                 fighter: "The Wild Bunch",
                 name: "Back to the Hideout",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasHeal: true
             },
             {
@@ -920,6 +956,7 @@ export let fighters = [
             {
                 fighter: "The Wild Bunch",
                 name: "Outlaw Doc",
+                affectsFriendlyAlly: true,
                 copies: 2,
                 hasHeal: true
             },
@@ -937,6 +974,7 @@ export let fighters = [
                 fighter: "The Wild Bunch",
                 name: "We Aint Here to Talk",
                 copies: 2,
+                affectsOpponentAlly: true,
                 hasAttack: true
             }
         ]
@@ -959,6 +997,7 @@ export let fighters = [
                 fighter: "Wong Fei-Hung",
                 name: "Chi Focus",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasHeal: true,
                 hasGainPower: true
             },
@@ -970,6 +1009,7 @@ export let fighters = [
             {
                 fighter: "Wong Fei-Hung",
                 name: "Ging Balance",
+                affectsFriendlyAlly: true,
                 copies: 2,
                 hasBlock: true,
                 hasGainPower: true,
@@ -978,12 +1018,14 @@ export let fighters = [
                 fighter: "Wong Fei-Hung",
                 name: "Ging Bridge",
                 copies: 1,
+                affectsFriendlyAlly: true,
                 hasGainPower: true,
             },
             {
                 fighter: "Wong Fei-Hung",
                 name: "Tiger Fist",
                 copies: 2,
+                affectsFriendlyAlly: true,
                 hasAttack: true,
                 hasGainPower: true
             },
@@ -1003,8 +1045,11 @@ allInputs.forEach((input, index, array) => {
     input.addEventListener('change', function() {
         let array = getCards();
         placeCards(array);
+        displayResultsCount();
     });
 });
+
+// checkFighters();
 
 getAllCards();
 
@@ -1036,6 +1081,14 @@ fighters.forEach((fighter, index, array) => {
         cardsContainer.appendChild(newImage);
     });
 });
+
+displayResultsCount();
+function displayResultsCount() {
+    console.log("Displaying results count");
+    let resultCount = cardsContainer.childElementCount;
+    let resultsElem = document.querySelector(".js_results-number");
+    resultsElem.textContent = resultCount + " Cards Found";
+}
 
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("card")) {
@@ -1070,6 +1123,7 @@ function clearFighters() {
 
     let array = getCards();
     placeCards(array);
+    displayResultsCount();
 }
 
 document.body.addEventListener('click', function(event) {
@@ -1085,4 +1139,5 @@ function checkFighters() {
 
     let array = getCards();
     placeCards(array);
+    displayResultsCount();
 }

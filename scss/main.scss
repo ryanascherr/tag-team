@@ -10,10 +10,26 @@ body {
     // background-position: center;
 }
 
+.btn {
+    border: 2px solid #411928;
+    background-color: #411928;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: all .25s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #411928;
+    }
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     gap: 1rem;
+    margin-top: 1rem;
 
     img {
         max-width: 100%;
@@ -151,4 +167,10 @@ body {
         max-height: 25px;
         margin-left: .25rem;
     }
+}
+
+.results-box {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 }
