@@ -67,7 +67,7 @@ export let fighters = [
         ]
     },
     {
-        name: "Ching-Shih",
+        name: "Ching Shih",
         health: 14,
         startingPower: 2,
         specialTrack: true,
@@ -1168,29 +1168,63 @@ function showFightersTab() {
 
     cardsTab.classList.add("hidden");
     fightersTab.classList.remove("hidden");
+
+    displayFighterCards();
 }
 
 let dropdown = document.getElementById("fighter-select");
 
-dropdown.addEventListener("change", () => {
-    const selectedValue = dropdown.value;
-    console.log("Selected value:", selectedValue);
-
+function displayFighterCards() {
+    let selectedValue = dropdown.value;
     let selectedFighter = document.querySelector(".fighter#" + selectedValue);
 
-    console.log(selectedFighter);
+    let selectedOption = dropdown.options[dropdown.selectedIndex];
+    let properName = selectedOption.text;
 
-    showFighter(selectedFighter);
+    showFighter(selectedFighter, properName);
+}
+
+dropdown.addEventListener("change", () => {
+    let selectedValue = dropdown.value;
+    let selectedFighter = document.querySelector(".fighter#" + selectedValue);
+
+    let selectedOption = dropdown.options[dropdown.selectedIndex];
+    let properName = selectedOption.text;
+
+    showFighter(selectedFighter, properName);
 });
 
-function showFighter(selectedFighter) {
+function showFighter(selectedFighter, properName) {
     let fighters = document.querySelectorAll(".fighter");
 
     fighters.forEach((fighter) => {
         fighter.classList.add("hidden");
     });
 
-    console.log(selectedFighter);
-
     selectedFighter.classList.remove("hidden");
+    placeFighterCards(properName);
+}
+
+function placeFighterCards(fighterName) {
+    let cardsContainer = document.getElementById("test");
+    cardsContainer.innerHTML = "";
+
+    fighters.forEach((fighter) => {
+        if (fighter.name === fighterName) {
+            fighter.cards.forEach((card) => {
+                let name = card.fighter;
+                name = name.toLocaleLowerCase();
+                name = name.replace(/ /g, "-");
+
+                let cardName = card.name;
+                cardName = cardName.toLowerCase();
+                cardName = cardName.replace(/ /g, "-");
+
+                let newImage = document.createElement('img');
+                newImage.classList.add("card");
+                newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+                cardsContainer.appendChild(newImage);
+            })
+        }
+    })
 }
