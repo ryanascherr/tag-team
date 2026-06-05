@@ -210,23 +210,24 @@ hr {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.fighter__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-  gap: 1rem;
-}
-.fighter__cards img {
-  max-width: 100%;
-  width: 100%;
-}
-.fighter__cards img:hover {
-  cursor: pointer;
-}
 .fighter img {
   max-width: 100%;
   width: 100%;
 }
 .fighter img:hover {
+  cursor: pointer;
+}
+
+.fighter-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 1rem;
+}
+.fighter-cards img {
+  max-width: 100%;
+  width: 100%;
+}
+.fighter-cards img:hover {
   cursor: pointer;
 }
 

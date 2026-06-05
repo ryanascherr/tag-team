@@ -239,7 +239,32 @@ hr {
     }
 
     &__cards {
-        display: grid;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        // gap: 1rem;
+
+        // img {
+        //     max-width: 100%;
+        //     width: 100%;
+
+        //     &:hover {
+        //         cursor: pointer;
+        //     }
+        // }
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.fighter-cards {
+    display: grid;
         grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
         gap: 1rem;
 
@@ -251,16 +276,6 @@ hr {
                 cursor: pointer;
             }
         }
-    }
-
-    img {
-        max-width: 100%;
-        width: 100%;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
 }
 
 .two-col-table {

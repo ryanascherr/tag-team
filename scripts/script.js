@@ -1206,7 +1206,7 @@ function showFighter(selectedFighter, properName) {
 }
 
 function placeFighterCards(fighterName) {
-    let cardsContainer = document.getElementById("test");
+    let cardsContainer = document.querySelector(".fighter-cards");
     cardsContainer.innerHTML = "";
 
     fighters.forEach((fighter) => {
