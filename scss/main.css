@@ -10,9 +10,12 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
   margin-top: 0;
+  color: var(--primary);
 }
 
 hr {
@@ -27,11 +30,16 @@ hr {
   padding: 0.5rem;
   transition: all 0.25s;
   font-weight: bold;
+  margin: 0.5rem;
 }
 .btn:hover {
   cursor: pointer;
   background-color: #fff;
   color: var(--primary);
+}
+
+.hidden {
+  display: none;
 }
 
 .cards-container {
@@ -170,4 +178,65 @@ hr {
   display: flex;
   justify-content: center;
   padding: 1rem;
+}
+
+.tab-btns {
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fighter-select-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+.fighter-select-container label {
+  margin-right: 0.5rem;
+}
+
+.fighter {
+  max-width: 100%;
+}
+.fighter__boards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.fighter__boards--two {
+  grid-template-columns: 1fr 1fr;
+}
+.fighter__data {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.fighter__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 1rem;
+}
+.fighter img {
+  max-width: 100%;
+  width: 100%;
+}
+.fighter img:hover {
+  cursor: pointer;
+}
+
+.two-col-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.two-col-table td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+.two-col-table td,
+.two-col-table tr {
+  width: 50%;
+  text-align: center;
+}
+.two-col-table .col1 {
+  background-color: #e3f0ff; /* Light blue for column 1 */
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

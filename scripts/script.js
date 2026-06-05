@@ -1139,3 +1139,58 @@ function checkFighters() {
     placeCards(array);
     displayResultsCount();
 }
+
+// Fighter Pages
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_cards")) {
+        showCardsTab();
+    }
+});
+
+function showCardsTab() {
+    let cardsTab = document.querySelector(".tab-cards");
+    let fightersTab = document.querySelector(".tab-fighters");
+
+    fightersTab.classList.add("hidden");
+    cardsTab.classList.remove("hidden");
+}
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_fighters")) {
+        showFightersTab();
+    }
+});
+
+function showFightersTab() {
+    let cardsTab = document.querySelector(".tab-cards");
+    let fightersTab = document.querySelector(".tab-fighters");
+
+    cardsTab.classList.add("hidden");
+    fightersTab.classList.remove("hidden");
+}
+
+let dropdown = document.getElementById("fighter-select");
+
+dropdown.addEventListener("change", () => {
+    const selectedValue = dropdown.value;
+    console.log("Selected value:", selectedValue);
+
+    let selectedFighter = document.querySelector(".fighter#" + selectedValue);
+
+    console.log(selectedFighter);
+
+    showFighter(selectedFighter);
+});
+
+function showFighter(selectedFighter) {
+    let fighters = document.querySelectorAll(".fighter");
+
+    fighters.forEach((fighter) => {
+        fighter.classList.add("hidden");
+    });
+
+    console.log(selectedFighter);
+
+    selectedFighter.classList.remove("hidden");
+}
