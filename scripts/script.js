@@ -1,4 +1,62 @@
+// TODO
+// Filter for effects that happen as soon as you ad cards to deck
+
 export let fighters = [
+    {
+        name: "Big Brother",
+        health: 17,
+        startingPower: 2,
+        cards: [
+            {
+                fighter: "Big Brother",
+                name: "Giant Hammer",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true,
+            },
+            {
+                fighter: "Big Brother",
+                name: "Charge and Chill",
+                copies: 2,
+                hasUniqueIcon: true,
+                hasGainPower: true,
+                hasPowerAlly: true
+            },
+            {
+                fighter: "Big Brother",
+                name: "Emotional Support",
+                copies: 2,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true,
+            },
+            {
+                fighter: "Big Brother",
+                name: "Rush",
+                copies: 2,
+                hasAttack: true,
+                hasUniqueIcon: true,
+            },
+            {
+                fighter: "Big Brother",
+                name: "Sneak Attack",
+                copies: 2,
+                hasAttack: true,
+                hasAttackPartner: true,
+                hasUniqueIcon: true,
+                affectsOpponentAlly: true
+            },
+            {
+                fighter: "Big Brother",
+                name: "Steel Wall",
+                copies: 1,
+                hasHeal: true,
+                hasGainPower: true,
+                hasPowerAlly: true,
+                hasBlock: true,
+            },
+        ]
+    },
     {
         name: "Bodvar",
         health: 11,
@@ -64,6 +122,61 @@ export let fighters = [
                 hasConditional: true,
                 hasSelfHarm: true
             }
+        ]
+    },
+    {
+        name: "Brawler",
+        cards: [
+            {
+                fighter: "Brawler",
+                name: "Beat",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Beat em Up!",
+                copies: 2,
+                hasAttack: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Reversal",
+                copies: 2,
+                hasBlock: true,
+                hasHeal: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Synchronized Beat",
+                copies: 2,
+                hasAttack: true,
+                hasConditional: true,
+                hasGainPower: true,
+                affectsFriendlyAlly: true,
+                hasUniqueIcon: true,
+            },
+            {
+                fighter: "Brawler",
+                name: "Teamwork",
+                copies: 1,
+                hasAttack: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true,
+                hasUniqueIcon: true,
+                hasConditional: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Throw",
+                copies: 2,
+                hasDirectDamage: true,
+                hasConditional: true
+            },
         ]
     },
     {
@@ -150,6 +263,57 @@ export let fighters = [
         ]
     },
     {
+        name: "Combo Master",
+        cards: [
+            {
+                fighter: "Combo Master",
+                name: "Relentless Pressure",
+                copies: 1,
+                isStartingCard: true,
+                hasAttack: true,
+                hasConditional: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Change of Plans",
+                copies: 2,
+                hasConditional: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Combotastic",
+                copies: 2,
+                hasAttack: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Helping Buddy",
+                copies: 2,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Launcher",
+                copies: 1,
+                hasAttack: true,
+                hasCancel: true,
+                hasDirectDamage: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Rest",
+                copies: 2,
+                hasBlock: true,
+                hasHeal: true
+            }
+        ]
+    },
+    {
         name: "Excalibur",
         health: 7,
         startingPower: 0,
@@ -225,6 +389,55 @@ export let fighters = [
                 hasDirectDamage: true,
                 hasUniqueIcon: true,
                 hasSelfHarm: true
+            },
+        ]
+    },
+    {
+        name: "Hunter",
+        cards: [
+            {
+                fighter: "Hunter",
+                name: "Call of the Wild",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Command Wolf",
+                copies: 1,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Focus",
+                copies: 2,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Heal",
+                copies: 2,
+                hasUniqueIcon: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Pack Tactics",
+                copies: 2,
+                hasBlock: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Slash",
+                copies: 2,
+                hasAttack: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true
             },
         ]
     },
@@ -592,6 +805,50 @@ export let fighters = [
         ]
     },
     {
+        name: "Ninja",
+        cards: [
+            {
+                fighter: "Ninja",
+                name: "Improvise",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Defend",
+                copies: 2,
+                hasBlock: true,
+                hasGainPower: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Meditation",
+                copies: 2,
+                hasConditional: true,
+                hasGainPower: true,
+                hasHeal: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Smoke Bomb",
+                copies: 2,
+                hasBlock: true,
+                hasAttack: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Surprise Smash",
+                copies: 3,
+                hasAttack: true,
+                hasUniqueIcon: true,
+                hasConditional: true
+            },
+        ]
+    },
+    {
         name: "Perceval",
         health: 100,
         startingPower: 100,
@@ -649,6 +906,50 @@ export let fighters = [
                 name: "Vision of the Grail",
                 copies: 1,
                 hasGainPower: true
+            },
+        ]
+    },
+    {
+        name: "Samurai",
+        cards: [
+            {
+                fighter: "Samurai",
+                name: "Preparation",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Samurai",
+                name: "Bodyguard",
+                copies: 3,
+                hasBlock: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                hasHealBoth: true,
+                affectsFriendlyAlly: true,
+            },
+            {
+                fighter: "Samurai",
+                name: "Hit and Run",
+                copies: 2,
+                hasAttack: true
+            },
+            {
+                fighter: "Samurai",
+                name: "Support",
+                copies: 2,
+                hasUniqueIcon: true,
+                hasGainPower: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Samurai",
+                name: "Vitality",
+                copies: 2,
+                hasAttack: true,
+                hasHeal: true
             },
         ]
     },

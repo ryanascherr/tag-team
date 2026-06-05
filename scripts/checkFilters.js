@@ -17,8 +17,14 @@ export function checkFighters() {
     let perceval = document.querySelector('.js_perceval').checked;
     let theDragon = document.querySelector('.js_the-dragon').checked;
     let theGreenKnight = document.querySelector('.js_the-green-knight').checked;
+    let bigBrother = document.querySelector('.js_big-brother').checked;
+    let brawler = document.querySelector('.js_brawler').checked;
+    let comboMaster = document.querySelector('.js_combo-master').checked;
+    let hunter = document.querySelector('.js_hunter').checked;
+    let ninja = document.querySelector('.js_ninja').checked;
+    let samurai = document.querySelector('.js_samurai').checked;
 
-    return [bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight];
+    return [bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight, bigBrother, brawler, comboMaster, hunter, ninja, samurai];
 }
 
 export function checkActions() {

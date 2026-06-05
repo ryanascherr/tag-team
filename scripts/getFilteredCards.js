@@ -1,4 +1,4 @@
-export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight) {
+export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight, bigBrother, brawler, comboMaster, hunter, ninja, samurai) {
 
     if (!bodvar) {
         array = array.filter(card => card.fighter != "Bodvar");
@@ -53,6 +53,24 @@ export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrij
     }
     if (!theGreenKnight) {
         array = array.filter(card => card.fighter != "The Green Knight");
+    }
+    if (!bigBrother) {
+        array = array.filter(card => card.fighter != "Big Brother");
+    }
+    if (!brawler) {
+        array = array.filter(card => card.fighter != "Brawler");
+    }
+    if (!comboMaster) {
+        array = array.filter(card => card.fighter != "Combo Master");
+    }
+    if (!hunter) {
+        array = array.filter(card => card.fighter != "Hunter");
+    }
+    if (!ninja) {
+        array = array.filter(card => card.fighter != "Ninja");
+    }
+    if (!samurai) {
+        array = array.filter(card => card.fighter != "Samurai");
     }
 
     return array;
