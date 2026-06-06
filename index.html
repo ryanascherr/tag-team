@@ -10,8 +10,8 @@
 <body>
     <h1>Tag Team Card Database</h1>
     <div class="tab-btns">
-        <button class="btn js_cards">Cards</button>
-        <button class="btn js_fighters">Fighters</button>
+        <button class="btn btn--selected tab js_cards">Cards</button>
+        <button class="btn tab js_fighters">Fighters</button>
     </div>
     <div class="tab tab-cards">
         <div class="filters">
@@ -225,21 +225,15 @@
                 <option value="merlin">Merlin</option>
                 <option value="milady">Milady</option>
                 <option value="mordred">Mordred</option>
-                <option value="10">Option 10</option>
-                <option value="11">Option 11</option>
-                <option value="12">Option 12</option>
-                <option value="13">Option 13</option>
-                <option value="14">Option 14</option>
-                <option value="15">Option 15</option>
-                <option value="16">Option 16</option>
-                <option value="17">Option 17</option>
-                <option value="18">Option 18</option>
-                <option value="19">Option 19</option>
-                <option value="20">Option 20</option>
-                <option value="21">Option 21</option>
-                <option value="22">Option 22</option>
-                <option value="23">Option 23</option>
-                <option value="24">Option 24</option>
+                <option value="morgan">Morgan</option>
+                <option value="perceval">Perceval</option>
+                <option value="shango">Shango</option>
+                <option value="the-dragon">The Dragon</option>
+                <option value="the-fey-folk">The Fey Folk</option>
+                <option value="the-golem">The Golem</option>
+                <option value="the-green-knight">The Green Knight</option>
+                <option value="the-wild-bunch">The Wild Bunch</option>
+                <option value="wong-fei-hung">Wong Fei-Hung</option>
             </select>
         </div>
 
@@ -313,6 +307,32 @@
                 </table>
             </div>
         </div>
+        <div class="fighter hidden" id="excalibur">
+            <h2>Excalibur</h2>
+            <div class="fighter__boards">
+                <img src="./img/excalibur/other/excalibur_draft.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block / Deflect</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <div class="fighter hidden" id="joan">
             <h2>Joan</h2>
             <div class="fighter__boards">
@@ -355,7 +375,7 @@
                         <td>20%</td>
                     </tr>
                     <tr>
-                        <td class="col1">Block / Reflect</td>
+                        <td class="col1">Block / Deflect</td>
                         <td>20%</td>
                     </tr>
                     <tr>
@@ -485,6 +505,278 @@
                     <tr>
                         <td class="col1">Gain Power</td>
                         <td>10%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="morgan">
+            <h2>Morgan</h2>
+            <div class="fighter__boards">
+                <img src="./img/morgan/other/morgan_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block / Deflect</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Cancel</td>
+                        <td>10%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="perceval">
+            <h2>Perceval</h2>
+            <div class="fighter__boards">
+                <img src="./img/perceval/other/perceval_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>10%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="shango">
+            <h2>Shango</h2>
+            <div class="fighter__boards">
+                <img src="./img/shango/other/shango_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Alfame!</td>
+                        <td>40%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-dragon">
+            <h2>The Dragon</h2>
+            <div class="fighter__boards">
+                <img src="./img/the-dragon/other/the-dragon_draft.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-fey-folk">
+            <h2>The Fey Folk</h2>
+            <div class="fighter__boards">
+                <img src="./img/the-fey-folk/other/the-fey-folk_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Cancel</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-golem">
+            <h2>The Golem</h2>
+            <div class="fighter__boards">
+                <img src="./img/the-golem/other/the-golem_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-golem">
+            <h2>The Golem</h2>
+            <div class="fighter__boards">
+                <img src="./img/the-golem/other/the-golem_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-green-knight">
+            <h2>The Green Knight</h2>
+            <div class="fighter__boards">
+                <img src="./img/the-green-knight/other/the-green-knight_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-wild-bunch">
+            <h2>The Wild Bunch</h2>
+            <div class="fighter__boards">
+                <img src="./img/the-wild-bunch/other/the-wild-bunch_board.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fighter hidden" id="wong-fei-hung">
+            <h2>Wong Fei-Hung</h2>
+            <div class="fighter__boards">
+                <img src="./img/wong-fei-hung/other/wong-fei-hung_draft.jpg" alt="">
+            </div>
+            <div class="fighter__data">
+                <table class="two-col-table">
+                    <tr>
+                        <td class="col1">Attack</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Block</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Heal</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gain Power</td>
+                        <td>40%</td>
                     </tr>
                 </table>
             </div>
