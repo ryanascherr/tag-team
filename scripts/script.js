@@ -2,61 +2,7 @@
 // Filter for effects that happen as soon as you ad cards to deck
 
 export let fighters = [
-    {
-        name: "Big Brother",
-        health: 17,
-        startingPower: 2,
-        cards: [
-            {
-                fighter: "Big Brother",
-                name: "Giant Hammer",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true,
-            },
-            {
-                fighter: "Big Brother",
-                name: "Charge and Chill",
-                copies: 2,
-                hasUniqueIcon: true,
-                hasGainPower: true,
-                hasPowerAlly: true
-            },
-            {
-                fighter: "Big Brother",
-                name: "Emotional Support",
-                copies: 2,
-                hasHeal: true,
-                hasHealAlly: true,
-                affectsFriendlyAlly: true,
-            },
-            {
-                fighter: "Big Brother",
-                name: "Rush",
-                copies: 2,
-                hasAttack: true,
-                hasUniqueIcon: true,
-            },
-            {
-                fighter: "Big Brother",
-                name: "Sneak Attack",
-                copies: 2,
-                hasAttack: true,
-                hasAttackPartner: true,
-                hasUniqueIcon: true,
-                affectsOpponentAlly: true
-            },
-            {
-                fighter: "Big Brother",
-                name: "Steel Wall",
-                copies: 1,
-                hasHeal: true,
-                hasGainPower: true,
-                hasPowerAlly: true,
-                hasBlock: true,
-            },
-        ]
-    },
+    // BASE SET
     {
         name: "Bodvar",
         health: 11,
@@ -122,61 +68,6 @@ export let fighters = [
                 hasConditional: true,
                 hasSelfHarm: true
             }
-        ]
-    },
-    {
-        name: "Brawler",
-        cards: [
-            {
-                fighter: "Brawler",
-                name: "Beat",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Brawler",
-                name: "Beat em Up!",
-                copies: 2,
-                hasAttack: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Brawler",
-                name: "Reversal",
-                copies: 2,
-                hasBlock: true,
-                hasHeal: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Brawler",
-                name: "Synchronized Beat",
-                copies: 2,
-                hasAttack: true,
-                hasConditional: true,
-                hasGainPower: true,
-                affectsFriendlyAlly: true,
-                hasUniqueIcon: true,
-            },
-            {
-                fighter: "Brawler",
-                name: "Teamwork",
-                copies: 1,
-                hasAttack: true,
-                hasHeal: true,
-                hasHealAlly: true,
-                affectsFriendlyAlly: true,
-                hasUniqueIcon: true,
-                hasConditional: true
-            },
-            {
-                fighter: "Brawler",
-                name: "Throw",
-                copies: 2,
-                hasDirectDamage: true,
-                hasConditional: true
-            },
         ]
     },
     {
@@ -259,185 +150,6 @@ export let fighters = [
                 hasBlock: true,
                 hasGainPower: true,
                 hasPowerSelf: true
-            },
-        ]
-    },
-    {
-        name: "Combo Master",
-        cards: [
-            {
-                fighter: "Combo Master",
-                name: "Relentless Pressure",
-                copies: 1,
-                isStartingCard: true,
-                hasAttack: true,
-                hasConditional: true,
-                hasGainPower: true
-            },
-            {
-                fighter: "Combo Master",
-                name: "Change of Plans",
-                copies: 2,
-                hasConditional: true,
-                hasGainPower: true
-            },
-            {
-                fighter: "Combo Master",
-                name: "Combotastic",
-                copies: 2,
-                hasAttack: true
-            },
-            {
-                fighter: "Combo Master",
-                name: "Helping Buddy",
-                copies: 2,
-                hasHeal: true,
-                hasHealAlly: true,
-                affectsFriendlyAlly: true,
-                hasGainPower: true
-            },
-            {
-                fighter: "Combo Master",
-                name: "Launcher",
-                copies: 1,
-                hasAttack: true,
-                hasCancel: true,
-                hasDirectDamage: true
-            },
-            {
-                fighter: "Combo Master",
-                name: "Rest",
-                copies: 2,
-                hasBlock: true,
-                hasHeal: true
-            }
-        ]
-    },
-    {
-        name: "Excalibur",
-        health: 7,
-        startingPower: 0,
-        cards: [
-            {
-                fighter: "Excalibur",
-                name: "Sword of Destiny",
-                copies: 1,
-                affectsFriendlyAlly: true,
-                isStartingCard: true,
-                hasDirectDamage: true,
-                hasGainPower: true,
-                hasUniqueIcon: true,
-                hasConditional: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Excalibur",
-                name: "Enchanted Scabbard",
-                copies: 1,
-                affectsFriendlyAlly: true,
-                hasDirectDamage: true,
-                hasUniqueIcon: true,
-                hasReflect: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Excalibur",
-                name: "Pendragons Wrath",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasDirectDamage: true,
-                hasAttack: true,
-                hasUniqueIcon: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Excalibur",
-                name: "Steel on Steel",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasDirectDamage: true,
-                hasBlock: true,
-                hasGainPower: true,
-                hasUniqueIcon: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Excalibur",
-                name: "Unleashed!",
-                copies: 1,
-                affectsFriendlyAlly: true,
-                hasDirectDamage: true,
-                hasAttack: true,
-                hasUniqueIcon: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Excalibur",
-                name: "Unstable Aura",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasHeal: true,
-                hasUniqueIcon: true,
-                hasReflect: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Excalibur",
-                name: "What Should Not Have Been Broken",
-                copies: 1,
-                hasHeal: true,
-                hasDirectDamage: true,
-                hasUniqueIcon: true,
-                hasSelfHarm: true
-            },
-        ]
-    },
-    {
-        name: "Hunter",
-        cards: [
-            {
-                fighter: "Hunter",
-                name: "Call of the Wild",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Hunter",
-                name: "Command Wolf",
-                copies: 1,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Hunter",
-                name: "Focus",
-                copies: 2,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Hunter",
-                name: "Heal",
-                copies: 2,
-                hasUniqueIcon: true,
-                hasHeal: true,
-                hasHealAlly: true,
-                affectsFriendlyAlly: true
-            },
-            {
-                fighter: "Hunter",
-                name: "Pack Tactics",
-                copies: 2,
-                hasBlock: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Hunter",
-                name: "Slash",
-                copies: 2,
-                hasAttack: true,
-                hasHeal: true,
-                hasHealAlly: true,
-                affectsFriendlyAlly: true
             },
         ]
     },
@@ -597,47 +309,6 @@ export let fighters = [
         ]
     },
     {
-        name: "Merlin",
-        health: 100,
-        startingPower: 100,
-        cards: [
-            {
-                fighter: "Merlin",
-                name: "Master of Order and Chaos",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Merlin",
-                name: "Dark Ritual",
-                copies: 2,
-                hasDirectDamage: true,
-                hasGainPower: true,
-                hasSelfHarm: true
-            },
-            {
-                fighter: "Merlin",
-                name: "Student of the Ancient Knowledge",
-                copies: 3,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Merlin",
-                name: "The Standing Stones",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Merlin",
-                name: "Word in the Forgotten Tongue",
-                copies: 2,
-                hasUniqueIcon: true
-            },
-        ]
-    },
-    {
         name: "Milady",
         health: 16,
         startingPower: 1,
@@ -740,220 +411,6 @@ export let fighters = [
         ]
     },
     {
-        name: "Morgan",
-        health: 100,
-        startingPower: 100,
-        cards: [
-            {
-                fighter: "Morgan",
-                name: "My Eyes See All",
-                copies: 1,
-                isStartingCard: true,
-                hasGainPower: true,
-                hasConditional: true,
-                affectsStartingCard: true
-            },
-            {
-                fighter: "Morgan",
-                name: "Channel Power",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasBlock: true,
-                hasGainPower: true
-            },
-            {
-                fighter: "Morgan",
-                name: "Crowsclaw Charm",
-                copies: 1,
-                affectsFriendlyAlly: true,
-                hasBlock: true,
-                hasHeal: true,
-                hasHealAlly: true
-            },
-            {
-                fighter: "Morgan",
-                name: "Deadly Diversion",
-                copies: 1,
-                hasAttack: true,
-                hasCancel: true
-            },
-            {
-                fighter: "Morgan",
-                name: "Magical Mirror",
-                copies: 2,
-                hasGainPower: true,
-                hasAttack: true,
-                hasConditional: true
-            },
-            {
-                fighter: "Morgan",
-                name: "Spiral of Life",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasHeal: true,
-                hasHealBoth: true,
-                hasConditional: true
-            },
-            {
-                fighter: "Morgan",
-                name: "The Enchantress",
-                copies: 1,
-                hasBlock: true,
-                hasDirectDamage: true,
-                hasSelfHarm: true
-            },
-        ]
-    },
-    {
-        name: "Ninja",
-        cards: [
-            {
-                fighter: "Ninja",
-                name: "Improvise",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Ninja",
-                name: "Defend",
-                copies: 2,
-                hasBlock: true,
-                hasGainPower: true,
-                affectsFriendlyAlly: true
-            },
-            {
-                fighter: "Ninja",
-                name: "Meditation",
-                copies: 2,
-                hasConditional: true,
-                hasGainPower: true,
-                hasHeal: true
-            },
-            {
-                fighter: "Ninja",
-                name: "Smoke Bomb",
-                copies: 2,
-                hasBlock: true,
-                hasAttack: true,
-                affectsFriendlyAlly: true
-            },
-            {
-                fighter: "Ninja",
-                name: "Surprise Smash",
-                copies: 3,
-                hasAttack: true,
-                hasUniqueIcon: true,
-                hasConditional: true
-            },
-        ]
-    },
-    {
-        name: "Perceval",
-        health: 100,
-        startingPower: 100,
-        cards: [
-            {
-                fighter: "Perceval",
-                name: "The Questing Knight",
-                copies: 1,
-                isStartingCard: true,
-                hasAttack: true,
-                hasBlock: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Perceval",
-                name: "Act of Chivalry",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasBlock: true,
-                hasHeal: true,
-                hasHealBoth: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Perceval",
-                name: "Coup de Grace",
-                copies: 2,
-                hasAttack: true,
-                hasConditional: true
-            },
-            {
-                fighter: "Perceval",
-                name: "Quest for the Holy Grail",
-                copies: 1,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Perceval",
-                name: "The Bleeding Lance",
-                copies: 1,
-                hasAttack: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "Perceval",
-                name: "The Quest Begins",
-                copies: 2,
-                hasAttack: true,
-                hasHeal: true,
-                hasUniqueIcon: true,
-                hasConditional: true
-            },
-            {
-                fighter: "Perceval",
-                name: "Vision of the Grail",
-                copies: 1,
-                hasGainPower: true
-            },
-        ]
-    },
-    {
-        name: "Samurai",
-        cards: [
-            {
-                fighter: "Samurai",
-                name: "Preparation",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true,
-                hasGainPower: true
-            },
-            {
-                fighter: "Samurai",
-                name: "Bodyguard",
-                copies: 3,
-                hasBlock: true,
-                hasHeal: true,
-                hasHealAlly: true,
-                hasHealBoth: true,
-                affectsFriendlyAlly: true,
-            },
-            {
-                fighter: "Samurai",
-                name: "Hit and Run",
-                copies: 2,
-                hasAttack: true
-            },
-            {
-                fighter: "Samurai",
-                name: "Support",
-                copies: 2,
-                hasUniqueIcon: true,
-                hasGainPower: true,
-                affectsFriendlyAlly: true
-            },
-            {
-                fighter: "Samurai",
-                name: "Vitality",
-                copies: 2,
-                hasAttack: true,
-                hasHeal: true
-            },
-        ]
-    },
-    {
         name: "Shango",
         health: 15,
         startingPower: 0,
@@ -1005,59 +462,6 @@ export let fighters = [
                 hasBlock: true,
                 hasGainPower: true
             }
-        ]
-    },
-    {
-        name: "The Dragon",
-        health: 100,
-        startingPower: 100,
-        cards: [
-            {
-                fighter: "The Dragon",
-                name: "Hide of Iron",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Dragon",
-                name: "Dragonfire",
-                copies: 2,
-                hasAttack: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Dragon",
-                name: "In the Heart of the Mountain",
-                copies: 2,
-                hasBlock: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Dragon",
-                name: "Soul of the Wyrm",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasGainPower: true,
-                hasUniqueIcon: true,
-                hasConditional: true
-            },
-            {
-                fighter: "The Dragon",
-                name: "Tail Slash",
-                copies: 2,
-                hasAttack: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Dragon",
-                name: "Under My Wing",
-                affectsFriendlyAlly: true,
-                copies: 1,
-                hasHeal: true,
-                hasHealAlly: true,
-                hasUniqueIcon: true
-            },
         ]
     },
     {
@@ -1162,59 +566,6 @@ export let fighters = [
                 affectsFriendlyAlly: true,
                 copies: 2,
             }
-        ]
-    },
-    {
-        name: "The Green Knight",
-        health: 100,
-        startingPower: 100,
-        cards: [
-            {
-                fighter: "The Green Knight",
-                name: "The Greenwood Sap",
-                copies: 1,
-                isStartingCard: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Green Knight",
-                name: "A Blow for a Blow",
-                copies: 2,
-                hasAttack: true,
-                hasConditional: true
-            },
-            {
-                fighter: "The Green Knight",
-                name: "Donning the Greenwood Mask",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasGainPower: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Green Knight",
-                name: "The Green Chapel",
-                copies: 2,
-                affectsFriendlyAlly: true,
-                hasHeal: true,
-                hasHealAlly: true,
-                hasConditional: true
-            },
-            {
-                fighter: "The Green Knight",
-                name: "The Might of the Greenwood",
-                copies: 1,
-                hasAttack: true,
-                hasUniqueIcon: true
-            },
-            {
-                fighter: "The Green Knight",
-                name: "The Mighty Battleaxe",
-                copies: 2,
-                hasAttack: true,
-                hasDirectDamage: true,
-                hasSelfHarm: true
-            },
         ]
     },
     {
@@ -1330,7 +681,659 @@ export let fighters = [
                 hasGainPower: true
             },
         ]
-    }
+    },
+    // ARTHUR'S LEGACY
+    {
+        name: "Excalibur",
+        health: 7,
+        startingPower: 0,
+        cards: [
+            {
+                fighter: "Excalibur",
+                name: "Sword of Destiny",
+                copies: 1,
+                affectsFriendlyAlly: true,
+                isStartingCard: true,
+                hasDirectDamage: true,
+                hasGainPower: true,
+                hasUniqueIcon: true,
+                hasConditional: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Enchanted Scabbard",
+                copies: 1,
+                affectsFriendlyAlly: true,
+                hasDirectDamage: true,
+                hasUniqueIcon: true,
+                hasReflect: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Pendragons Wrath",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasDirectDamage: true,
+                hasAttack: true,
+                hasUniqueIcon: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Steel on Steel",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasDirectDamage: true,
+                hasBlock: true,
+                hasGainPower: true,
+                hasUniqueIcon: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Unleashed!",
+                copies: 1,
+                affectsFriendlyAlly: true,
+                hasDirectDamage: true,
+                hasAttack: true,
+                hasUniqueIcon: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "Unstable Aura",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasHeal: true,
+                hasUniqueIcon: true,
+                hasReflect: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Excalibur",
+                name: "What Should Not Have Been Broken",
+                copies: 1,
+                hasHeal: true,
+                hasDirectDamage: true,
+                hasUniqueIcon: true,
+                hasSelfHarm: true
+            },
+        ]
+    },
+    {
+        name: "Merlin",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "Merlin",
+                name: "Master of Order and Chaos",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Merlin",
+                name: "Dark Ritual",
+                copies: 2,
+                hasDirectDamage: true,
+                hasGainPower: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "Merlin",
+                name: "Student of the Ancient Knowledge",
+                copies: 3,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Merlin",
+                name: "The Standing Stones",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Merlin",
+                name: "Word in the Forgotten Tongue",
+                copies: 2,
+                hasUniqueIcon: true
+            },
+        ]
+    },
+    {
+        name: "Morgan",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "Morgan",
+                name: "My Eyes See All",
+                copies: 1,
+                isStartingCard: true,
+                hasGainPower: true,
+                hasConditional: true,
+                affectsStartingCard: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Channel Power",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasBlock: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Crowsclaw Charm",
+                copies: 1,
+                affectsFriendlyAlly: true,
+                hasBlock: true,
+                hasHeal: true,
+                hasHealAlly: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Deadly Diversion",
+                copies: 1,
+                hasAttack: true,
+                hasCancel: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Magical Mirror",
+                copies: 2,
+                hasGainPower: true,
+                hasAttack: true,
+                hasConditional: true
+            },
+            {
+                fighter: "Morgan",
+                name: "Spiral of Life",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasHeal: true,
+                hasHealBoth: true,
+                hasConditional: true
+            },
+            {
+                fighter: "Morgan",
+                name: "The Enchantress",
+                copies: 1,
+                hasBlock: true,
+                hasDirectDamage: true,
+                hasSelfHarm: true
+            },
+        ]
+    },
+    {
+        name: "Perceval",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "Perceval",
+                name: "The Questing Knight",
+                copies: 1,
+                isStartingCard: true,
+                hasAttack: true,
+                hasBlock: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Act of Chivalry",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasBlock: true,
+                hasHeal: true,
+                hasHealBoth: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Coup de Grace",
+                copies: 2,
+                hasAttack: true,
+                hasConditional: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Quest for the Holy Grail",
+                copies: 1,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Perceval",
+                name: "The Bleeding Lance",
+                copies: 1,
+                hasAttack: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Perceval",
+                name: "The Quest Begins",
+                copies: 2,
+                hasAttack: true,
+                hasHeal: true,
+                hasUniqueIcon: true,
+                hasConditional: true
+            },
+            {
+                fighter: "Perceval",
+                name: "Vision of the Grail",
+                copies: 1,
+                hasGainPower: true
+            },
+        ]
+    },
+    {
+        name: "The Dragon",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "The Dragon",
+                name: "Hide of Iron",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Dragonfire",
+                copies: 2,
+                hasAttack: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "In the Heart of the Mountain",
+                copies: 2,
+                hasBlock: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Soul of the Wyrm",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasGainPower: true,
+                hasUniqueIcon: true,
+                hasConditional: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Tail Slash",
+                copies: 2,
+                hasAttack: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Dragon",
+                name: "Under My Wing",
+                affectsFriendlyAlly: true,
+                copies: 1,
+                hasHeal: true,
+                hasHealAlly: true,
+                hasUniqueIcon: true
+            },
+        ]
+    },
+    {
+        name: "The Green Knight",
+        health: 100,
+        startingPower: 100,
+        cards: [
+            {
+                fighter: "The Green Knight",
+                name: "The Greenwood Sap",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "A Blow for a Blow",
+                copies: 2,
+                hasAttack: true,
+                hasConditional: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "Donning the Greenwood Mask",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasGainPower: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "The Green Chapel",
+                copies: 2,
+                affectsFriendlyAlly: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                hasConditional: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "The Might of the Greenwood",
+                copies: 1,
+                hasAttack: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "The Green Knight",
+                name: "The Mighty Battleaxe",
+                copies: 2,
+                hasAttack: true,
+                hasDirectDamage: true,
+                hasSelfHarm: true
+            },
+        ]
+    },
+    // NEW SET
+    {
+        name: "Big Brother",
+        health: 17,
+        startingPower: 2,
+        cards: [
+            {
+                fighter: "Big Brother",
+                name: "Giant Hammer",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true,
+            },
+            {
+                fighter: "Big Brother",
+                name: "Charge and Chill",
+                copies: 2,
+                hasUniqueIcon: true,
+                hasGainPower: true,
+                hasPowerAlly: true
+            },
+            {
+                fighter: "Big Brother",
+                name: "Emotional Support",
+                copies: 2,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true,
+            },
+            {
+                fighter: "Big Brother",
+                name: "Rush",
+                copies: 2,
+                hasAttack: true,
+                hasUniqueIcon: true,
+            },
+            {
+                fighter: "Big Brother",
+                name: "Sneak Attack",
+                copies: 2,
+                hasAttack: true,
+                hasAttackPartner: true,
+                hasUniqueIcon: true,
+                affectsOpponentAlly: true
+            },
+            {
+                fighter: "Big Brother",
+                name: "Steel Wall",
+                copies: 1,
+                hasHeal: true,
+                hasGainPower: true,
+                hasPowerAlly: true,
+                hasBlock: true,
+            },
+        ]
+    },
+    {
+        name: "Brawler",
+        cards: [
+            {
+                fighter: "Brawler",
+                name: "Beat",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Beat em Up!",
+                copies: 2,
+                hasAttack: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Reversal",
+                copies: 2,
+                hasBlock: true,
+                hasHeal: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Synchronized Beat",
+                copies: 2,
+                hasAttack: true,
+                hasConditional: true,
+                hasGainPower: true,
+                affectsFriendlyAlly: true,
+                hasUniqueIcon: true,
+            },
+            {
+                fighter: "Brawler",
+                name: "Teamwork",
+                copies: 1,
+                hasAttack: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true,
+                hasUniqueIcon: true,
+                hasConditional: true
+            },
+            {
+                fighter: "Brawler",
+                name: "Throw",
+                copies: 2,
+                hasDirectDamage: true,
+                hasConditional: true
+            },
+        ]
+    },
+    {
+        name: "Combo Master",
+        cards: [
+            {
+                fighter: "Combo Master",
+                name: "Relentless Pressure",
+                copies: 1,
+                isStartingCard: true,
+                hasAttack: true,
+                hasConditional: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Change of Plans",
+                copies: 2,
+                hasConditional: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Combotastic",
+                copies: 2,
+                hasAttack: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Helping Buddy",
+                copies: 2,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Launcher",
+                copies: 1,
+                hasAttack: true,
+                hasCancel: true,
+                hasDirectDamage: true
+            },
+            {
+                fighter: "Combo Master",
+                name: "Rest",
+                copies: 2,
+                hasBlock: true,
+                hasHeal: true
+            }
+        ]
+    },
+    {
+        name: "Hunter",
+        cards: [
+            {
+                fighter: "Hunter",
+                name: "Call of the Wild",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Command Wolf",
+                copies: 1,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Focus",
+                copies: 2,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Heal",
+                copies: 2,
+                hasUniqueIcon: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Pack Tactics",
+                copies: 2,
+                hasBlock: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Hunter",
+                name: "Slash",
+                copies: 2,
+                hasAttack: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                affectsFriendlyAlly: true
+            },
+        ]
+    },
+    {
+        name: "Ninja",
+        cards: [
+            {
+                fighter: "Ninja",
+                name: "Improvise",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Defend",
+                copies: 2,
+                hasBlock: true,
+                hasGainPower: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Meditation",
+                copies: 2,
+                hasConditional: true,
+                hasGainPower: true,
+                hasHeal: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Smoke Bomb",
+                copies: 2,
+                hasBlock: true,
+                hasAttack: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Ninja",
+                name: "Surprise Smash",
+                copies: 3,
+                hasAttack: true,
+                hasUniqueIcon: true,
+                hasConditional: true
+            },
+        ]
+    },
+    {
+        name: "Samurai",
+        cards: [
+            {
+                fighter: "Samurai",
+                name: "Preparation",
+                copies: 1,
+                isStartingCard: true,
+                hasUniqueIcon: true,
+                hasGainPower: true
+            },
+            {
+                fighter: "Samurai",
+                name: "Bodyguard",
+                copies: 3,
+                hasBlock: true,
+                hasHeal: true,
+                hasHealAlly: true,
+                hasHealBoth: true,
+                affectsFriendlyAlly: true,
+            },
+            {
+                fighter: "Samurai",
+                name: "Hit and Run",
+                copies: 2,
+                hasAttack: true
+            },
+            {
+                fighter: "Samurai",
+                name: "Support",
+                copies: 2,
+                hasUniqueIcon: true,
+                hasGainPower: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "Samurai",
+                name: "Vitality",
+                copies: 2,
+                hasAttack: true,
+                hasHeal: true
+            },
+        ]
+    },
 ];
 
 import { getCards } from "./getCards.js";
@@ -1440,3 +1443,31 @@ function checkFighters() {
     placeCards(array);
     displayResultsCount();
 }
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_set")) {
+        fighterInputs.forEach((input) => {
+            input.checked = false;
+        });
+
+        let inputsToBeChecked = [];
+
+        if (event.target.classList.contains("js_base-set-btn")) {
+            inputsToBeChecked = this.querySelectorAll(".js_base-set");
+        }
+        if (event.target.classList.contains("js_arthurs-legacy-btn")) {
+            inputsToBeChecked = this.querySelectorAll(".js_arthurs-legacy");
+        }
+        if (event.target.classList.contains("js_new-set-btn")) {
+            inputsToBeChecked = this.querySelectorAll(".js_new-set");
+        }
+
+        inputsToBeChecked.forEach((input) => {
+            input.checked = true;
+        });
+
+        let array = getCards();
+        placeCards(array);
+        displayResultsCount();
+    }
+});
