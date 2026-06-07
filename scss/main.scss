@@ -52,6 +52,14 @@ hr {
     display: none;
 }
 
+.desktop-only {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
@@ -235,6 +243,21 @@ hr {
 
 .fighter {
     max-width: 100%;
+    margin-bottom: 1.5rem;
+
+    &__info {
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+
+    &__info:has(.fighter__boards--two) {
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
 
     &__boards {
         display: grid;
@@ -244,11 +267,56 @@ hr {
         &--two {
             grid-template-columns: 1fr 1fr;
         }
+
+        // @media screen and (min-width: 768px) {
+        //     grid-template-columns: 1fr 1fr;
+        // }
+    }
+
+    &__text {
+        
+    }
+
+    &__bio {
+        margin-bottom: 1rem;
+
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 1.5;
+
+            @media screen and (min-width: 992px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__stats {
+        h3 {
+            margin: 0 0 .25rem 0;
+            text-align: left;
+        }
+
+        .bar {
+            border: 2px solid var(--primary);
+            height: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin-bottom: 1rem;
+
+            &__segment {
+                border: 2px solid var(--primary);
+
+                &--full {
+                    background-color: yellow;
+                }
+            }
+        }
     }
 
     &__data {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     &__cards {
@@ -270,11 +338,15 @@ hr {
         max-width: 100%;
         width: 100%;
 
-        &:hover {
-            cursor: pointer;
-        }
+        // &:hover {
+        //     cursor: pointer;
+        // }
     }
 }
+
+// .test {
+//     padding: 1rem;
+// }
 
 .fighter-cards {
     display: grid;
@@ -311,3 +383,48 @@ hr {
         font-weight: bold;
     }
 }
+
+
+.tab-nav {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #888;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0 0 0.5rem 0;
+        border-bottom: 3px solid #fff;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 3px;
+            background: var(--primary);
+            transition: width 0.25s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    .active {
+        color: var(--primary);
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+

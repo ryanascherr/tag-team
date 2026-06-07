@@ -9,10 +9,12 @@
 </head>
 <body>
     <h1>Tag Team Card Database</h1>
-    <div class="tab-btns">
-        <button class="btn btn--selected tab js_cards">Cards</button>
-        <button class="btn tab js_fighters">Fighters</button>
-    </div>
+
+    <nav class="tab-nav">
+        <button class="active js_cards js_tab">Cards</button>
+        <button class="js_fighters js_tab">Fighters</button>
+    </nav>
+
     <div class="tab tab-cards">
         <div class="filters">
             <div class="filters__filter">
@@ -239,78 +241,168 @@
 
         <div class="fighter" id="bodvar">
             <h2>Bodvar</h2>
-            <div class="fighter__boards fighter__boards--two">
-                <img src="./img/bodvar/other/bodvar_board.jpg" alt="">
-                <img src="./img/bodvar/other/bodvar_board-back.jpg" alt="">
+            <div class="fighter__info">
+                <div class="fighter__boards fighter__boards--two">
+                    <img src="./img/bodvar/other/bodvar_board.jpg" alt="">
+                    <img src="./img/bodvar/other/bodvar_board-back.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <p>Bödvar is all-out rage. Fuelled by fury, he transforms into a powerful, full-on attack, berserker bear… that is, if you manage to keep him on his feet long enough for the change to happen.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Health</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Offense</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                        <h3>Defense</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Heal</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Special</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data">
+                        <table class="two-col-table">
+                            <tr>
+                                <td class="col1">Attack</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Block</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Heal</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Gain Power</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Rage</td>
+                                <td>30%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="fighter__data">
-                <table class="two-col-table">
-                    <tr>
-                        <td class="col1">Attack</td>
-                        <td>40%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Block</td>
-                        <td>30%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Heal</td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Gain Power</td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Rage</td>
-                        <td>30%</td>
-                    </tr>
-                </table>
-            </div>
-
-            <!-- <div class="fighter__cards">
-                <img class="card" src="./img/bodvar/cards/bodvar_card_enrage.jpg" alt="">
-                <img class="card" src="./img/bodvar/cards/bodvar_card_berserk!.jpg" alt="">
-                <img class="card" src="./img/bodvar/cards/bodvar_card_blood-ties.jpg" alt="">
-                <img class="card" src="./img/bodvar/cards/bodvar_card_rune-of-strength.jpg" alt="">
-                <img class="card" src="./img/bodvar/cards/bodvar_card_rune-of-transformation.jpg" alt="">
-                <img class="card" src="./img/bodvar/cards/bodvar_card_spirit-trance.jpg" alt="">
-            </div> -->
         </div>
         <div class="fighter hidden" id="ching-shih">
             <h2>Ching Shih</h2>
-            <div class="fighter__boards">
-                <img src="./img/ching-shih/other/ching-shih_board.jpg" alt="">
-            </div>
-            <div class="fighter__data">
-                <table class="two-col-table">
-                    <tr>
-                        <td class="col1">Attack</td>
-                        <td>40%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Block</td>
-                        <td>30%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Heal</td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Gain Power</td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Ships</td>
-                        <td>90%</td>
-                    </tr>
-                </table>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/ching-shih/other/ching-shih_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <p>The clever and versatile Queen of Pirates will harry you relentlessly as she brings more and more Ships under her banner. More ships mean more options, and once she has a full Fleet under her command, you'll find yourself in Davey Jones's locker!</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Health</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Offense</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Defense</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Heal</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Special</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data">
+                        <table class="two-col-table">
+                            <tr>
+                                <td class="col1">Attack</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Block</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Heal</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Gain Power</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Ships</td>
+                                <td>90%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="fighter hidden" id="excalibur">
             <h2>Excalibur</h2>
             <div class="fighter__boards">
                 <img src="./img/excalibur/other/excalibur_draft.jpg" alt="">
+                <img class="desktop-only" src="./img/excalibur/other/excalibur_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -335,38 +427,89 @@
         </div>
         <div class="fighter hidden" id="joan">
             <h2>Joan</h2>
-            <div class="fighter__boards">
-                <img src="./img/joan/other/joan_board.jpg" alt="">
-            </div>
-            <div class="fighter__data">
-                <table class="two-col-table">
-                    <tr>
-                        <td class="col1">Attack</td>
-                        <td>40%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Block</td>
-                        <td>30%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Heal</td>
-                        <td>40%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Gain Power</td>
-                        <td>0%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Divine Voice</td>
-                        <td>60%</td>
-                    </tr>
-                </table>
+
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/joan/other/joan_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <p>This noble Paladin uses her faith to slowly and steadily grow her team's power. She's a straightforward, tough and reliable fighter who will never let you down—a perfect balance of offense, defense, and healing.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Health</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Offense</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Defense</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Heal</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h3>Special</h3>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data">
+                        <table class="two-col-table">
+                            <tr>
+                                <td class="col1">Attack</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Block</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Heal</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Gain Power</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td class="col1">Divine Voice</td>
+                                <td>60%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="fighter hidden" id="maman-brijit">
             <h2>Maman Brijit</h2>
             <div class="fighter__boards">
                 <img src="./img/maman-brijit/other/maman-brijit_board.jpg" alt="">
+                <img class="desktop-only" src="./img/maman-brijit/other/maman-brijit_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -397,6 +540,7 @@
             <h2>Mephisto</h2>
             <div class="fighter__boards">
                 <img src="./img/mephisto/other/mephisto_board.jpg" alt="">
+                <img class="desktop-only" src="./img/mephisto/other/mephisto_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -427,6 +571,7 @@
             <h2>Merlin</h2>
             <div class="fighter__boards">
                 <img src="./img/merlin/other/merlin_draft.jpg" alt="">
+                <img class="desktop-only" src="./img/merlin/other/merlin_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -457,6 +602,7 @@
             <h2>Milady</h2>
             <div class="fighter__boards">
                 <img src="./img/milady/other/milady_board.jpg" alt="">
+                <img class="desktop-only" src="./img/milady/other/milady_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -487,6 +633,7 @@
             <h2>Mordred</h2>
             <div class="fighter__boards">
                 <img src="./img/mordred/other/mordred_board.jpg" alt="">
+                <img class="desktop-only" src="./img/mordred/other/mordred_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -513,6 +660,7 @@
             <h2>Morgan</h2>
             <div class="fighter__boards">
                 <img src="./img/morgan/other/morgan_board.jpg" alt="">
+                <img class="desktop-only" src="./img/morgan/other/morgan_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -543,6 +691,7 @@
             <h2>Perceval</h2>
             <div class="fighter__boards">
                 <img src="./img/perceval/other/perceval_board.jpg" alt="">
+                <img class="desktop-only" src="./img/perceval/other/perceval_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -569,6 +718,7 @@
             <h2>Shango</h2>
             <div class="fighter__boards">
                 <img src="./img/shango/other/shango_board.jpg" alt="">
+                <img class="desktop-only" src="./img/shango/other/shango_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -599,6 +749,7 @@
             <h2>The Dragon</h2>
             <div class="fighter__boards">
                 <img src="./img/the-dragon/other/the-dragon_draft.jpg" alt="">
+                <img class="desktop-only" src="./img/the-dragon/other/the-dragon_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -625,6 +776,7 @@
             <h2>The Fey Folk</h2>
             <div class="fighter__boards">
                 <img src="./img/the-fey-folk/other/the-fey-folk_board.jpg" alt="">
+                <img class="desktop-only" src="./img/the-fey-folk/other/the-fey-folk_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -655,32 +807,7 @@
             <h2>The Golem</h2>
             <div class="fighter__boards">
                 <img src="./img/the-golem/other/the-golem_board.jpg" alt="">
-            </div>
-            <div class="fighter__data">
-                <table class="two-col-table">
-                    <tr>
-                        <td class="col1">Attack</td>
-                        <td>50%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Block</td>
-                        <td>0%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Heal</td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Gain Power</td>
-                        <td>20%</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="fighter hidden" id="the-golem">
-            <h2>The Golem</h2>
-            <div class="fighter__boards">
-                <img src="./img/the-golem/other/the-golem_board.jpg" alt="">
+                <img class="desktop-only" src="./img/the-golem/other/the-golem_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -707,6 +834,7 @@
             <h2>The Green Knight</h2>
             <div class="fighter__boards">
                 <img src="./img/the-green-knight/other/the-green-knight_board.jpg" alt="">
+                <img class="desktop-only" src="./img/the-green-knight/other/the-green-knight_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -733,6 +861,7 @@
             <h2>The Wild Bunch</h2>
             <div class="fighter__boards">
                 <img src="./img/the-wild-bunch/other/the-wild-bunch_board.jpg" alt="">
+                <img class="desktop-only" src="./img/the-wild-bunch/other/the-wild-bunch_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">
@@ -759,6 +888,7 @@
             <h2>Wong Fei-Hung</h2>
             <div class="fighter__boards">
                 <img src="./img/wong-fei-hung/other/wong-fei-hung_draft.jpg" alt="">
+                <img class="desktop-only" src="./img/wong-fei-hung/other/wong-fei-hung_draft.jpg" alt="">
             </div>
             <div class="fighter__data">
                 <table class="two-col-table">

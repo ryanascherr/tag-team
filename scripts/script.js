@@ -1143,7 +1143,26 @@ function checkFighters() {
 // Fighter Pages
 
 document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_tab")) {
+        let tabElems = document.querySelectorAll(".js_tab");
+        tabElems.forEach((tab) => {
+            tab.classList.remove("active");
+        });
+        event.target.classList.add("active");
+
+        if (event.target.classList.contains("js_cards")) {
+
+        }
+        if (event.target.classList.contains("js_fighters")) {
+            
+        }
+    }
+});
+
+document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_cards")) {
+
+        event.target.classList.add("active");
         showCardsTab();
     }
 });
@@ -1158,6 +1177,8 @@ function showCardsTab() {
 
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_fighters")) {
+
+        event.target.classList.add("active");
         showFightersTab();
     }
 });
