@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 h1,
 h2,
 h3 {
@@ -208,6 +212,19 @@ hr {
   max-width: 100%;
   margin-bottom: 1.5rem;
 }
+.fighter h2 {
+  font-size: 2.25rem;
+}
+.fighter h3 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+  text-align: center;
+}
+.fighter h4 {
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--primary);
+}
 @media screen and (min-width: 768px) {
   .fighter__info {
     display: grid;
@@ -230,6 +247,12 @@ hr {
 }
 .fighter__bio {
   margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .fighter__bio {
+    margin-top: 0;
+  }
 }
 .fighter__bio p {
   margin: 0;
@@ -238,19 +261,18 @@ hr {
 }
 @media screen and (min-width: 992px) {
   .fighter__bio p {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
-}
-.fighter__stats h3 {
-  margin: 0 0 0.25rem 0;
-  text-align: left;
 }
 .fighter__stats .bar {
   border: 2px solid var(--primary);
-  height: 2rem;
+  height: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-bottom: 1rem;
+}
+.fighter__stats .bar--ten {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .fighter__stats .bar__segment {
   border: 2px solid var(--primary);
