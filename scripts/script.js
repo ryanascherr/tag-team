@@ -1,5 +1,9 @@
 // TODO
-// Filter for effects that happen as soon as you ad cards to deck
+// Filter for effects that happen as soon as you add cards to deck
+// Fix Mephisto and Golem and Wong starting card in fighter section
+// Random pair generator
+// Fix layout of fighter section
+// Deck simulator with 2 fighters and all of their cards
 
 export let fighters = [
     // BASE SET
@@ -1479,6 +1483,8 @@ function showCardsTab() {
     cardsTab.classList.remove("hidden");
 }
 
+// FIGHTER DATA
+
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_fighters")) {
 
@@ -1542,13 +1548,16 @@ function placeFighterCards(fighterName) {
                 name = name.replace(/ /g, "-");
 
                 let cardName = card.name;
+                let copies = card.copies;
                 cardName = cardName.toLowerCase();
                 cardName = cardName.replace(/ /g, "-");
 
-                let newImage = document.createElement('img');
-                newImage.classList.add("card");
-                newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
-                cardsContainer.appendChild(newImage);
+                for (let i = 0; i < copies; i++) {
+                    let newImage = document.createElement('img');
+                    newImage.classList.add("card");
+                    newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+                    cardsContainer.appendChild(newImage);
+                }
             })
         }
     })
