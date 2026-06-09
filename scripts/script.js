@@ -71,7 +71,7 @@ export let fighters = [
         ]
     },
     {
-        name: "Ching-Shih",
+        name: "Ching Shih",
         health: 14,
         startingPower: 2,
         specialTrack: true,
@@ -1442,6 +1442,116 @@ function checkFighters() {
     let array = getCards();
     placeCards(array);
     displayResultsCount();
+}
+
+// Fighter Pages
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_tab")) {
+        let tabElems = document.querySelectorAll(".js_tab");
+        tabElems.forEach((tab) => {
+            tab.classList.remove("active");
+        });
+        event.target.classList.add("active");
+
+        if (event.target.classList.contains("js_cards")) {
+
+        }
+        if (event.target.classList.contains("js_fighters")) {
+            
+        }
+    }
+});
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_cards")) {
+
+        event.target.classList.add("active");
+        showCardsTab();
+    }
+});
+
+function showCardsTab() {
+    let cardsTab = document.querySelector(".tab-cards");
+    let fightersTab = document.querySelector(".tab-fighters");
+
+    fightersTab.classList.add("hidden");
+    cardsTab.classList.remove("hidden");
+}
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains("js_fighters")) {
+
+        event.target.classList.add("active");
+        showFightersTab();
+    }
+});
+
+function showFightersTab() {
+    let cardsTab = document.querySelector(".tab-cards");
+    let fightersTab = document.querySelector(".tab-fighters");
+
+    cardsTab.classList.add("hidden");
+    fightersTab.classList.remove("hidden");
+
+    displayFighterCards();
+}
+
+let dropdown = document.getElementById("fighter-select");
+
+function displayFighterCards() {
+    let selectedValue = dropdown.value;
+    let selectedFighter = document.querySelector(".fighter#" + selectedValue);
+
+    let selectedOption = dropdown.options[dropdown.selectedIndex];
+    let properName = selectedOption.text;
+
+    showFighter(selectedFighter, properName);
+}
+
+dropdown.addEventListener("change", () => {
+    let selectedValue = dropdown.value;
+    let selectedFighter = document.querySelector(".fighter#" + selectedValue);
+
+    let selectedOption = dropdown.options[dropdown.selectedIndex];
+    let properName = selectedOption.text;
+
+    showFighter(selectedFighter, properName);
+});
+
+function showFighter(selectedFighter, properName) {
+    let fighters = document.querySelectorAll(".fighter");
+
+    fighters.forEach((fighter) => {
+        fighter.classList.add("hidden");
+    });
+
+    selectedFighter.classList.remove("hidden");
+    placeFighterCards(properName);
+}
+
+function placeFighterCards(fighterName) {
+    let cardsContainer = document.querySelector(".fighter-cards");
+    cardsContainer.innerHTML = "";
+
+    fighters.forEach((fighter) => {
+        if (fighter.name === fighterName) {
+            fighter.cards.forEach((card) => {
+                let name = card.fighter;
+                name = name.toLocaleLowerCase();
+                name = name.replace(/ /g, "-");
+
+                let cardName = card.name;
+                cardName = cardName.toLowerCase();
+                cardName = cardName.replace(/ /g, "-");
+
+                let newImage = document.createElement('img');
+                newImage.classList.add("card");
+                newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+                cardsContainer.appendChild(newImage);
+            })
+        }
+    })
 }
 
 document.body.addEventListener('click', function(event) {

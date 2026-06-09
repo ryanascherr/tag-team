@@ -9,241 +9,2086 @@
 </head>
 <body>
     <h1>Tag Team Card Database</h1>
-    <div class="filters">
-        <div class="filters__filter">
-            <h2 class="filters__title">Fighters</h2>
-            <ul class="filters__list">
-                <!-- BASE SET -->
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_bodvar js_base-set" checked type="checkbox" id="bodvar" name="checkbox" value="1">
-                    <label class="filters__label" for="bodvar">Bodvar</label>
-                    <img class="filters__icon" src="./img/bodvar/icon_bodvar.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_ching-shih js_base-set" checked type="checkbox" id="ching-shih" name="checkbox" value="1">
-                    <label class="filters__label" for="ching-shih">Ching Shih</label>
-                    <img class="filters__icon" src="./img/ching-shih/icon_ching-shih.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_joan js_base-set" checked type="checkbox" id="joan" name="checkbox" value="1">
-                    <label class="filters__label" for="joan">Joan</label>
-                    <img class="filters__icon" src="./img/joan/icon_joan.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_maman-brijit js_base-set" checked type="checkbox" id="maman-brijit" name="checkbox" value="1">
-                    <label class="filters__label" for="maman-brijit">Maman Brijit</label>
-                    <img class="filters__icon" src="./img/maman-brijit/icon_maman-brijit.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_mephisto js_base-set" checked type="checkbox" id="mephisto" name="checkbox" value="1">
-                    <label class="filters__label" for="mephisto">Mephisto</label>
-                    <img class="filters__icon" src="./img/mephisto/icon_mephisto.png" alt="">
-                </li>
-                
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_milady js_base-set" checked type="checkbox" id="milady" name="checkbox" value="1">
-                    <label class="filters__label" for="milady">Milady</label>
-                    <img class="filters__icon" src="./img/milady/icon_milady.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_mordred js_base-set" checked type="checkbox" id="mordred" name="checkbox" value="1">
-                    <label class="filters__label" for="mordred">Mordred</label>
-                    <img class="filters__icon" src="./img/mordred/icon_mordred.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_shango js_base-set" checked type="checkbox" id="shango" name="checkbox" value="1">
-                    <label class="filters__label" for="shango">Shango</label>
-                    <img class="filters__icon" src="./img/shango/icon_shango.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_the-fey-folk js_base-set" checked type="checkbox" id="the-fey-folk" name="checkbox" value="1">
-                    <label class="filters__label" for="the-fey-folk">Fey Folk</label>
-                    <img class="filters__icon" src="./img/the-fey-folk/icon_the-fey-folk.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_the-golem js_base-set" checked type="checkbox" id="the-golem" name="checkbox" value="1">
-                    <label class="filters__label" for="the-golem">Golem</label>
-                    <img class="filters__icon" src="./img/the-golem/icon_the-golem.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_the-wild-bunch js_base-set" checked type="checkbox" id="the-wild-bunch" name="checkbox" value="1">
-                    <label class="filters__label" for="the-wild-bunch">Wild Bunch</label>
-                    <img class="filters__icon" src="./img/the-wild-bunch/icon_the-wild-bunch.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_wong-fei-hung js_base-set" checked type="checkbox" id="wong-fei-hung" name="checkbox" value="1">
-                    <label class="filters__label" for="wong-fei-hung">Wong Fei-Hung</label>
-                    <img class="filters__icon" src="./img/wong-fei-hung/icon_wong-fei-hung.png" alt="">
-                </li>
-                <!-- Arthur's Legacy -->
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_excalibur js_arthurs-legacy" checked type="checkbox" id="excalibur" name="checkbox" value="1">
-                    <label class="filters__label" for="excalibur">Excalibur</label>
-                    <img class="filters__icon" src="./img/excalibur/icon_excalibur.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_merlin js_arthurs-legacy" checked type="checkbox" id="merlin" name="checkbox" value="1">
-                    <label class="filters__label" for="merlin">Merlin</label>
-                    <img class="filters__icon" src="./img/merlin/icon_merlin.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_morgan js_arthurs-legacy" checked type="checkbox" id="morgan" name="checkbox" value="1">
-                    <label class="filters__label" for="morgan">Morgan</label>
-                    <img class="filters__icon" src="./img/morgan/icon_morgan.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_perceval js_arthurs-legacy" checked type="checkbox" id="perceval" name="checkbox" value="1">
-                    <label class="filters__label" for="perceval">Perceval</label>
-                    <img class="filters__icon" src="./img/perceval/icon_perceval.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_the-dragon js_arthurs-legacy" checked type="checkbox" id="the-dragon" name="checkbox" value="1">
-                    <label class="filters__label" for="the-dragon">Dragon</label>
-                    <img class="filters__icon" src="./img/the-dragon/icon_the-dragon.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_the-green-knight js_arthurs-legacy" checked type="checkbox" id="the-green-knight" name="checkbox" value="1">
-                    <label class="filters__label" for="the-green-knight">Green Knight</label>
-                    <img class="filters__icon" src="./img/the-green-knight/icon_the-green-knight.png" alt="">
-                </li>
-                <!-- NEW SET -->
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_big-brother js_new-set" checked type="checkbox" id="big-brother" name="checkbox" value="1">
-                    <label class="filters__label" for="big-brother">Big Brother</label>
-                    <img class="filters__icon" src="./img/big-brother/icon_big-brother.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_brawler js_new-set" checked type="checkbox" id="brawler" name="checkbox" value="1">
-                    <label class="filters__label" for="brawler">Brawler</label>
-                    <img class="filters__icon" src="./img/brawler/icon_brawler.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_combo-master js_new-set" checked type="checkbox" id="combo-master" name="checkbox" value="1">
-                    <label class="filters__label" for="combo-master">Combo Master</label>
-                    <img class="filters__icon" src="./img/icons/icon_attack.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_hunter js_new-set" checked type="checkbox" id="hunter" name="checkbox" value="1">
-                    <label class="filters__label" for="hunter">Hunter</label>
-                    <img class="filters__icon" src="./img/hunter/icon_hunter.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_ninja js_new-set" checked type="checkbox" id="ninja" name="checkbox" value="1">
-                    <label class="filters__label" for="ninja">Ninja</label>
-                    <img class="filters__icon" src="./img/ninja/icon_ninja.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_fighter js_samurai js_new-set" checked type="checkbox" id="samurai" name="checkbox" value="1">
-                    <label class="filters__label" for="samurai">Samurai</label>
-                    <img class="filters__icon" src="./img/samurai/icon_samurai.png" alt="">
-                </li>
-            </ul>
-            <hr>
-            <div class="filters__btn-container">
-                <button class="btn js_criteria js_clear-set">Clear All</button>
-                <button class="btn js_criteria js_check-set">Check All</button>
+
+    <nav class="tab-nav">
+        <button class="active js_cards js_tab">Cards</button>
+        <button class="js_fighters js_tab">Fighters</button>
+    </nav>
+
+    <div class="tab tab-cards">
+        <div class="filters">
+            <div class="filters__filter">
+                <h2 class="filters__title">Fighters</h2>
+                <ul class="filters__list">
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_bodvar" checked type="checkbox" id="bodvar" name="checkbox" value="1">
+                        <label class="filters__label" for="bodvar">Bodvar</label>
+                        <img class="filters__icon" src="./img/bodvar/icon_bodvar.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_ching-shih" checked type="checkbox" id="ching-shih" name="checkbox" value="1">
+                        <label class="filters__label" for="ching-shih">Ching Shih</label>
+                        <img class="filters__icon" src="./img/ching-shih/icon_ching-shih.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_excalibur" checked type="checkbox" id="excalibur" name="checkbox" value="1">
+                        <label class="filters__label" for="excalibur">Excalibur</label>
+                        <img class="filters__icon" src="./img/excalibur/icon_excalibur.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_joan" checked type="checkbox" id="joan" name="checkbox" value="1">
+                        <label class="filters__label" for="joan">Joan</label>
+                        <img class="filters__icon" src="./img/joan/icon_joan.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_maman-brijit" checked type="checkbox" id="maman-brijit" name="checkbox" value="1">
+                        <label class="filters__label" for="maman-brijit">Maman Brijit</label>
+                        <img class="filters__icon" src="./img/maman-brijit/icon_maman-brijit.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_mephisto" checked type="checkbox" id="mephisto" name="checkbox" value="1">
+                        <label class="filters__label" for="mephisto">Mephisto</label>
+                        <img class="filters__icon" src="./img/mephisto/icon_mephisto.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_merlin" checked type="checkbox" id="merlin" name="checkbox" value="1">
+                        <label class="filters__label" for="merlin">Merlin</label>
+                        <img class="filters__icon" src="./img/merlin/icon_merlin.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_milady" checked type="checkbox" id="milady" name="checkbox" value="1">
+                        <label class="filters__label" for="milady">Milady</label>
+                        <img class="filters__icon" src="./img/milady/icon_milady.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_mordred" checked type="checkbox" id="mordred" name="checkbox" value="1">
+                        <label class="filters__label" for="mordred">Mordred</label>
+                        <img class="filters__icon" src="./img/mordred/icon_mordred.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_morgan" checked type="checkbox" id="morgan" name="checkbox" value="1">
+                        <label class="filters__label" for="morgan">Morgan</label>
+                        <img class="filters__icon" src="./img/morgan/icon_morgan.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_perceval" checked type="checkbox" id="perceval" name="checkbox" value="1">
+                        <label class="filters__label" for="perceval">Perceval</label>
+                        <img class="filters__icon" src="./img/perceval/icon_perceval.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_shango" checked type="checkbox" id="shango" name="checkbox" value="1">
+                        <label class="filters__label" for="shango">Shango</label>
+                        <img class="filters__icon" src="./img/shango/icon_shango.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_the-dragon" checked type="checkbox" id="the-dragon" name="checkbox" value="1">
+                        <label class="filters__label" for="the-dragon">Dragon</label>
+                        <img class="filters__icon" src="./img/the-dragon/icon_the-dragon.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_the-fey-folk" checked type="checkbox" id="the-fey-folk" name="checkbox" value="1">
+                        <label class="filters__label" for="the-fey-folk">Fey Folk</label>
+                        <img class="filters__icon" src="./img/the-fey-folk/icon_the-fey-folk.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_the-golem" checked type="checkbox" id="the-golem" name="checkbox" value="1">
+                        <label class="filters__label" for="the-golem">Golem</label>
+                        <img class="filters__icon" src="./img/the-golem/icon_the-golem.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_the-green-knight" checked type="checkbox" id="the-green-knight" name="checkbox" value="1">
+                        <label class="filters__label" for="the-green-knight">Green Knight</label>
+                        <img class="filters__icon" src="./img/the-green-knight/icon_the-green-knight.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_the-wild-bunch" checked type="checkbox" id="the-wild-bunch" name="checkbox" value="1">
+                        <label class="filters__label" for="the-wild-bunch">Wild Bunch</label>
+                        <img class="filters__icon" src="./img/the-wild-bunch/icon_the-wild-bunch.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_wong-fei-hung" checked type="checkbox" id="wong-fei-hung" name="checkbox" value="1">
+                        <label class="filters__label" for="wong-fei-hung">Wong Fei-Hung</label>
+                        <img class="filters__icon" src="./img/wong-fei-hung/icon_wong-fei-hung.png" alt="">
+                    </li>
+                </ul>
+                <hr>
+                <div class="filters__btn-container">
+                    <button class="btn js_criteria js_clear-set">Clear All</button>
+                    <button class="btn js_criteria js_check-set">Check All</button>
+                </div>
             </div>
-            <hr>
-            <div class="filters__btn-container">
-                <button class="btn js_criteria js_set js_base-set-btn">Base Set</button>
-                <button class="btn js_criteria js_set js_arthurs-legacy-btn">Arthur's Legacy</button>
-                <button class="btn js_criteria js_set js_new-set-btn">New Set</button>
+            <div class="filters__filter">
+                <h2 class="filters__title">Properties</h2>
+                <ul class="filters__list">
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_starting-card" type="checkbox" id="starting-card" name="checkbox" value="1">
+                        <label class="filters__label" for="starting-card">Starting Card</label>
+                        <img class="filters__icon" src="./img/icons/icon_starting-card.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_attack" type="checkbox" id="attack" name="checkbox" value="1">
+                        <label class="filters__label" for="attack">Attack</label>
+                        <img class="filters__icon" src="./img/icons/icon_attack.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_block" type="checkbox" id="block" name="checkbox" value="1">
+                        <label class="filters__label" for="block">Block</label>
+                        <img class="filters__icon" src="./img/icons/icon_block.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_heal" type="checkbox" id="heal" name="checkbox" value="1">
+                        <label class="filters__label" for="heal">Heal</label>
+                        <img class="filters__icon" src="./img/icons/icon_heal.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_gain-power" type="checkbox" id="gain-power" name="checkbox" value="1">
+                        <label class="filters__label" for="gain-power">Gain Power</label>
+                        <img class="filters__icon" src="./img/icons/icons_power.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_direct-damage" type="checkbox" id="direct-damage" name="checkbox" value="1">
+                        <label class="filters__label" for="direct-damage">Direct Damage</label>
+                        <img class="filters__icon" src="./img/icons/icon_direct-damage.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_cancel" type="checkbox" id="cancel" name="checkbox" value="1">
+                        <label class="filters__label" for="cancel">Cancel</label>
+                        <img class="filters__icon" src="./img/icons/icon_cancel.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_unique-icon" type="checkbox" id="unique-icon" name="checkbox" value="1">
+                        <label class="filters__label" for="unique-icon">Unique Icon</label>
+                        <img class="filters__icon" src="./img/icons/icon_unique.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_friendly-ally" type="checkbox" id="friendly-ally" name="checkbox" value="1">
+                        <label class="filters__label" for="friendly-ally">Friendly Ally</label>
+                        <img class="filters__icon" src="./img/icons/icon_ally-partner.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_opponent-ally" type="checkbox" id="opponent-ally" name="checkbox" value="1">
+                        <label class="filters__label" for="opponent-ally">Opponent's Ally</label>
+                        <img class="filters__icon" src="./img/icons/icon_opponent-partner.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_conditional" type="checkbox" id="conditional" name="checkbox" value="1">
+                        <label class="filters__label" for="conditional">Conditional</label>
+                        <img class="filters__icon" src="./img/icons/icon_conditional.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_win-condition" type="checkbox" id="win-condition" name="checkbox" value="1">
+                        <label class="filters__label" for="win-condition">Win/Lose Con.</label>
+                        <img class="filters__icon" src="./img/icons/icon_ko.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_affects-starting-card" type="checkbox" id="affects-starting-card" name="checkbox" value="1">
+                        <label class="filters__label" for="affects-starting-card">Affects Starting Card</label>
+                        <img class="filters__icon" src="./img/icons/icon_affects-starting-card.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_reflect" type="checkbox" id="reflect" name="checkbox" value="1">
+                        <label class="filters__label" for="reflect">Reflect</label>
+                        <img class="filters__icon" src="./img/icons/icon_reflect.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_single" type="checkbox" id="single" name="checkbox" value="1">
+                        <label class="filters__label" for="single">Single</label>
+                        <img class="filters__icon" src="./img/icons/icon_single.png" alt="">
+                    </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_action js_multiple" type="checkbox" id="multiple" name="checkbox" value="1">
+                        <label class="filters__label" for="multiple">Multiple</label>
+                        <img class="filters__icon" src="./img/icons/icon_multiple.png" alt="">
+                    </li>
+                    <li class="filters__list-item" style="display: none;">
+                        <input class="filters__input js_criteria js_action js_self-harm" type="checkbox" id="self-harm" name="checkbox" value="1">
+                        <label class="filters__label" for="self-harm">Self-Harm</label>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="filters__filter">
-            <h2 class="filters__title">Properties</h2>
-            <ul class="filters__list">
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_starting-card" type="checkbox" id="starting-card" name="checkbox" value="1">
-                    <label class="filters__label" for="starting-card">Starting Card</label>
-                    <img class="filters__icon" src="./img/icons/icon_starting-card.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_attack" type="checkbox" id="attack" name="checkbox" value="1">
-                    <label class="filters__label" for="attack">Attack</label>
-                    <img class="filters__icon" src="./img/icons/icon_attack.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_block" type="checkbox" id="block" name="checkbox" value="1">
-                    <label class="filters__label" for="block">Block</label>
-                    <img class="filters__icon" src="./img/icons/icon_block.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_heal" type="checkbox" id="heal" name="checkbox" value="1">
-                    <label class="filters__label" for="heal">Heal</label>
-                    <img class="filters__icon" src="./img/icons/icon_heal.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_gain-power" type="checkbox" id="gain-power" name="checkbox" value="1">
-                    <label class="filters__label" for="gain-power">Gain Power</label>
-                    <img class="filters__icon" src="./img/icons/icons_power.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_direct-damage" type="checkbox" id="direct-damage" name="checkbox" value="1">
-                    <label class="filters__label" for="direct-damage">Direct Damage</label>
-                    <img class="filters__icon" src="./img/icons/icon_direct-damage.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_cancel" type="checkbox" id="cancel" name="checkbox" value="1">
-                    <label class="filters__label" for="cancel">Cancel</label>
-                    <img class="filters__icon" src="./img/icons/icon_cancel.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_unique-icon" type="checkbox" id="unique-icon" name="checkbox" value="1">
-                    <label class="filters__label" for="unique-icon">Unique Icon</label>
-                    <img class="filters__icon" src="./img/icons/icon_unique.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_friendly-ally" type="checkbox" id="friendly-ally" name="checkbox" value="1">
-                    <label class="filters__label" for="friendly-ally">Friendly Ally</label>
-                    <img class="filters__icon" src="./img/icons/icon_ally-partner.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_opponent-ally" type="checkbox" id="opponent-ally" name="checkbox" value="1">
-                    <label class="filters__label" for="opponent-ally">Opponent's Ally</label>
-                    <img class="filters__icon" src="./img/icons/icon_opponent-partner.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_conditional" type="checkbox" id="conditional" name="checkbox" value="1">
-                    <label class="filters__label" for="conditional">Conditional</label>
-                    <img class="filters__icon" src="./img/icons/icon_conditional.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_win-condition" type="checkbox" id="win-condition" name="checkbox" value="1">
-                    <label class="filters__label" for="win-condition">Win/Lose Con.</label>
-                    <img class="filters__icon" src="./img/icons/icon_ko.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_affects-starting-card" type="checkbox" id="affects-starting-card" name="checkbox" value="1">
-                    <label class="filters__label" for="affects-starting-card">Affects Starting Card</label>
-                    <img class="filters__icon" src="./img/icons/icon_affects-starting-card.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_reflect" type="checkbox" id="reflect" name="checkbox" value="1">
-                    <label class="filters__label" for="reflect">Reflect</label>
-                    <img class="filters__icon" src="./img/icons/icon_reflect.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_single" type="checkbox" id="single" name="checkbox" value="1">
-                    <label class="filters__label" for="single">Single</label>
-                    <img class="filters__icon" src="./img/icons/icon_single.png" alt="">
-                </li>
-                <li class="filters__list-item">
-                    <input class="filters__input js_criteria js_action js_multiple" type="checkbox" id="multiple" name="checkbox" value="1">
-                    <label class="filters__label" for="multiple">Multiple</label>
-                    <img class="filters__icon" src="./img/icons/icon_multiple.png" alt="">
-                </li>
-                <li class="filters__list-item" style="display: none;">
-                    <input class="filters__input js_criteria js_action js_self-harm" type="checkbox" id="self-harm" name="checkbox" value="1">
-                    <label class="filters__label" for="self-harm">Self-Harm</label>
-                </li>
-            </ul>
+        <div class="results-box">
+            <span class="js_results-number">
         </div>
+        <div class="cards-container"></div>
     </div>
-    <div class="results-box">
-        <span class="js_results-number"></div>
+
+    <div class="tab tab-fighters hidden">
+
+        <div class="fighter-select-container">
+            <label for="fighter-select">Choose a fighter:</label>
+            <select id="fighter-select" name="fighter-select">
+                <option value="bodvar">Bodvar</option>
+                <option value="ching-shih">Ching Shih</option>
+                <option value="joan">Joan</option>
+                <option value="maman-brijit">Maman Brijit</option>
+                <option value="mephisto">Mephisto</option>
+                <option value="milady">Milady</option>
+                <option value="mordred">Mordred</option>
+                <option value="shango">Shango</option>
+                <option value="the-fey-folk">The Fey Folk</option>
+                <option value="the-golem">The Golem</option>
+                <option value="the-wild-bunch">The Wild Bunch</option>
+                <option value="wong-fei-hung">Wong Fei-Hung</option>
+                <option value="excalibur">Excalibur</option>
+                <option value="merlin">Merlin</option>
+                <option value="morgan">Morgan</option>
+                <option value="perceval">Perceval</option>
+                <option value="the-dragon">The Dragon</option>
+                <option value="the-green-knight">The Green Knight</option>
+            </select>
+        </div>
+
+        <div class="fighter" id="bodvar">
+            <h2>Bodvar</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards fighter__boards--two">
+                    <img src="./img/bodvar/other/bodvar_board.jpg" alt="">
+                    <img src="./img/bodvar/other/bodvar_board-back.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>Bödvar is all-out rage. Fuelled by fury, he transforms into a powerful, full-on attack, berserker bear… that is, if you manage to keep him on his feet long enough for the change to happen.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Rage</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="ching-shih">
+            <h2>Ching Shih</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/ching-shih/other/ching-shih_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>The clever and versatile Queen of Pirates will harry you relentlessly as she brings more and more Ships under her banner. More ships mean more options, and once she has a full Fleet under her command, you'll find yourself in Davey Jones's locker!</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Ships</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="excalibur">
+            <h2>Excalibur</h2>
+            <div class="fighter__boards fighter__boards--two">
+                <img src="./img/excalibur/other/excalibur_board.jpg" alt="">
+                <img src="./img/excalibur/other/excalibur_board-back.jpg" alt="">
+            </div>
+            <div class="fighter__data fighter__stats">
+                <h3>Card Distrbution</h3>
+                <h4>Attacks</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Blocks / Deflects</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Heals</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Power Gains</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="joan">
+            <h2>Joan</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/joan/other/joan_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>This noble Paladin uses her faith to slowly and steadily grow her team's power. She's a straightforward, tough and reliable fighter who will never let you down—a perfect balance of offense, defense, and healing.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Divine Voice</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="maman-brijit">
+            <h2>Maman Brijit</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/maman-brijit/other/maman-brijit_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>Maman Brijit will bend her enemies to her will until they find themselves healing her, cancelling their own actions, or even attacking their Partner! If she takes too much damage all at once, she'll return from the dead even stronger, ready to punish her opponents' insolence.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks / Deflects</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Cancels</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="mephisto">
+            <h2>Mephisto</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/mephisto/other/mephisto_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>Mephisto cares about no one but himself. Oh, and maybe his twin serpents, whose powers he controls through his Serpent token to both strike down his enemies and increase his own power. Although this agent of Evil has a fragile side, he also has a couple of very nasty tricks up his sleeve... don't let him drag you to hell!</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="merlin">
+            <h2>Merlin</h2>
+            <div class="fighter__boards fighter__boards--two">
+                <img src="./img/merlin/other/merlin_board.jpg" alt="">
+                <img src="./img/merlin/other/merlin_tree.jpg" alt="">
+            </div>
+            <div class="fighter__data fighter__stats">
+                <h3>Card Distrbution</h3>
+                <h4>Attacks</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Blocks</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Heals</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Power Gains</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+                <h4>Trees / Ancient Knowledge</h4>
+                <div class="bar bar--ten">
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--full"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                    <div class="bar__segment bar__segment--empty"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="milady">
+            <h2>Milady</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/milady/other/milady_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>This sneaky Seductress always has a sharp knife at the ready, and plants schemes that are as unpredictable as they are lethal! She's got a whole bag of tricks when it comes to hurting her foes or helping her ally. Her surprises don't always line up the way she'd like, but when they do... BOOM!</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Schemes</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="mordred">
+            <h2>Mordred</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/mordred/other/mordred_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>The ultimate Black Knight, Mordred is as sneaky as he is aggressive, and he slowly but surely bolsters his power every round. He doesn't attack as much as he counter-attacks, frustrating his opponents with his blocks and leaving them open to his hidden dagger! When he reaches 8 Power, he will come straight for your throat.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="morgan">
+            <h2>Morgan</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/morgan/other/morgan_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Cancels</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="perceval">
+            <h2>Perceval</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/perceval/other/perceval_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="shango">
+            <h2>Shango</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/shango/other/shango_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>Shango's ability to rain down fire and thunder makes him a dangerous fighter—even to his own allies. Still, it's better to stay on his good side: Place 5 Aflame! tokens on an opponent to incinerate them, causing an instant loss. But beware— the timing for placing these tokens is tricky!</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Aflame!</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-dragon">
+            <h2>The Dragon</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="/img/the-dragon/other/the-dragon_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-fey-folk">
+            <h2>The Fey Folk</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/the-fey-folk/other/the-fey-folk_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>The Fey Folk are not only a powerful support for their ally; they're mischievous Forest Sprites who grow stronger as they fall, using the Spirits of the fallen to their advantage! Even when they're all down, they can still linger in the arena for one more round.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Cancels</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-golem">
+            <h2>The Golem</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/the-golem/other/the-golem_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>Let's keep it simple: the Golem is a Tank. With more HP than anyone else, the ability to protect their Partner from harm, and a fair potential for mayhem by gaining power when taking damage, this big guy delivers on all his promises—and then some.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-green-knight">
+            <h2>The Green Knight</h2>
+
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/the-green-knight/other/the-green-knight_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="the-wild-bunch">
+            <h2>The Wild Bunch</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/the-wild-bunch/other/the-wild-bunch_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>These rowdy Outlaws are resilient; their Health track prevents them from taking big losses, but on the flip-side, it also slows down their healing. Their pact with the corrupt and fickle Sheriff means that they need to deftly manipulate his token to their advantage, because if they don't, they could be helping their opponents more than themselves!</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fighter hidden" id="wong-fei-hung">
+            <h2>Wong Fei-Hung</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/wong-fei-hung/other/wong-fei-hung_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__bio">
+                        <h3>Bio</h3>
+                        <p>This aged Master blends Ging and Chi techniques to empower his allies and bring down his foes. He knows how to turn the strength of even the most fearsome fighters against themselves, or channel massive amounts of power cubes toward his friends. With a simple touch to the right spot, he could even destroy the most threatening card in his opponent's deck.</p>
+                    </div>
+                    <div class="fighter__stats">
+                        <h3>Stats</h3>
+                        <h4>Health</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Offense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Defense</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heal</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Special</h4>
+                        <div class="bar">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                        </div>
+                    </div>
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distrbution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fighter-cards"></div>
     </div>
-    <div class="cards-container"></div>
 
     <div class="modal">
         <span class="modal__close-btn">X</span>

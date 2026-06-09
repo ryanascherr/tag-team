@@ -11,8 +11,15 @@ body {
 }
 
 h1 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
   text-align: center;
   margin-top: 0;
+  color: var(--primary);
 }
 
 hr {
@@ -27,11 +34,25 @@ hr {
   padding: 0.5rem;
   transition: all 0.25s;
   font-weight: bold;
+  margin: 0.5rem;
 }
 .btn:hover {
   cursor: pointer;
   background-color: #fff;
   color: var(--primary);
+}
+
+.hidden {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
 }
 
 .cards-container {
@@ -170,4 +191,169 @@ hr {
   display: flex;
   justify-content: center;
   padding: 1rem;
+}
+
+.tab-btns {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fighter-select-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+.fighter-select-container label {
+  margin-right: 0.5rem;
+}
+
+.fighter {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+.fighter h2 {
+  font-size: 2.25rem;
+}
+.fighter h3 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+  text-align: center;
+}
+.fighter h4 {
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--primary);
+}
+@media screen and (min-width: 768px) {
+  .fighter__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fighter__info:has(.fighter__boards--two) {
+    grid-template-columns: 1fr;
+  }
+}
+.fighter__boards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.fighter__boards--two {
+  grid-template-columns: 1fr 1fr;
+}
+.fighter__bio {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .fighter__bio {
+    margin-top: 0;
+  }
+}
+.fighter__bio p {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 992px) {
+  .fighter__bio p {
+    font-size: 1.75rem;
+  }
+}
+.fighter__stats .bar {
+  border: 2px solid var(--primary);
+  height: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 1rem;
+}
+.fighter__stats .bar--ten {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.fighter__stats .bar__segment {
+  border: 2px solid var(--primary);
+}
+.fighter__stats .bar__segment--full {
+  background-color: yellow;
+}
+.fighter__data {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.fighter img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.fighter-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 1rem;
+}
+.fighter-cards img {
+  max-width: 100%;
+  width: 100%;
+}
+.fighter-cards img:hover {
+  cursor: pointer;
+}
+
+.two-col-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.two-col-table td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+.two-col-table td,
+.two-col-table tr {
+  width: 50%;
+  text-align: center;
+}
+.two-col-table .col1 {
+  background-color: #e3f0ff; /* Light blue for column 1 */
+  font-weight: bold;
+}
+
+.tab-nav {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.tab-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 3px solid #fff;
+  position: relative;
+}
+.tab-nav button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 3px;
+  background: var(--primary);
+  transition: width 0.25s ease;
+}
+.tab-nav button:hover::after {
+  width: 100%;
+}
+.tab-nav .active {
+  color: var(--primary);
+}
+.tab-nav .active::after {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
