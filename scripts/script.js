@@ -1,9 +1,7 @@
 // TODO
 // Filter for effects that happen as soon as you add cards to deck
 // Fix Mephisto and Golem and Wong starting card in fighter section
-// Random pair generator
 // Fix layout of fighter section
-// Deck simulator with 2 fighters and all of their cards
 
 export let fighters = [
     // BASE SET
@@ -556,7 +554,8 @@ export let fighters = [
                 name: "Heal the Wounded",
                 copies: 2,
                 affectsFriendlyAlly: true,
-                hasHeal: true
+                hasHeal: true,
+                hasInstantBonus: true
             },
             {
                 fighter: "The Golem",
@@ -592,7 +591,8 @@ export let fighters = [
                 name: "Back to the Hideout",
                 copies: 1,
                 affectsFriendlyAlly: true,
-                hasHeal: true
+                hasHeal: true,
+                hasInstantBonus: true
             },
             {
                 fighter: "The Wild Bunch",
@@ -613,7 +613,8 @@ export let fighters = [
                 name: "Outlaw Doc",
                 affectsFriendlyAlly: true,
                 copies: 2,
-                hasHeal: true
+                hasHeal: true,
+                hasInstantBonus: true
             },
             {
                 fighter: "The Wild Bunch",
@@ -1182,7 +1183,8 @@ export let fighters = [
                 hasHeal: true,
                 hasHealAlly: true,
                 affectsFriendlyAlly: true,
-                hasGainPower: true
+                hasGainPower: true,
+                hasInstantBonus: true
             },
             {
                 fighter: "Combo Master",
@@ -1197,7 +1199,8 @@ export let fighters = [
                 name: "Rest",
                 copies: 2,
                 hasBlock: true,
-                hasHeal: true
+                hasHeal: true,
+                hasInstantBonus: true
             }
         ]
     },

@@ -45,6 +45,7 @@ export function checkActions() {
     let multiple = document.querySelector('.js_multiple').checked;
     let affectsFriendlyAlly = document.querySelector('.js_friendly-ally').checked;
     let affectsOpponentAlly = document.querySelector('.js_opponent-ally').checked;
+    let instantBonus = document.querySelector('.js_instant-bonus').checked;
 
-    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard, reflect, selfHarm, single, multiple, affectsFriendlyAlly, affectsOpponentAlly];
+    return [startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard, reflect, selfHarm, single, multiple, affectsFriendlyAlly, affectsOpponentAlly, instantBonus];
 }
