@@ -293,10 +293,6 @@ hr {
         // }
     }
 
-    &__text {
-        
-    }
-
     &__bio {
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -316,51 +312,9 @@ hr {
         }
     }
 
-    &__stats {
-        // h3 {
-        //     margin: 0 0 .25rem 0;
-        //     text-align: left;
-        // }
-
-        .bar {
-            border: 2px solid var(--primary);
-            height: 1.5rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            margin-bottom: 1rem;
-
-            &--ten {
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            }
-
-            &__segment {
-                border: 2px solid var(--primary);
-
-                &--full {
-                    background-color: yellow;
-                }
-            }
-        }
-    }
-
     &__data {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-    }
-
-    &__cards {
-        // display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-        // gap: 1rem;
-
-        // img {
-        //     max-width: 100%;
-        //     width: 100%;
-
-        //     &:hover {
-        //         cursor: pointer;
-        //     }
-        // }
     }
 
     img {
@@ -370,6 +324,30 @@ hr {
         // &:hover {
         //     cursor: pointer;
         // }
+    }
+}
+
+.bar {
+    border: 2px solid var(--primary);
+    height: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+
+    &--ten {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    &--twenty {
+        grid-template-columns: repeat(20, 1fr);
+    }
+
+    &__segment {
+        border: 2px solid var(--primary);
+
+        &--full {
+            background-color: yellow;
+        }
     }
 }
 
@@ -452,6 +430,59 @@ hr {
         color: var(--primary);
 
         &::after {
+            width: 100%;
+        }
+    }
+}
+
+.tab-pair {
+
+    &__select-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            margin-bottom: .5rem;
+        }
+
+        select {
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            label {
+                margin-bottom: 0;
+                margin-right: .5rem;
+            }
+
+            select {
+                margin-bottom: 0;
+            }
+
+            #fighter-pair-one {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__random-pair-btn-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        &__board {
             width: 100%;
         }
     }

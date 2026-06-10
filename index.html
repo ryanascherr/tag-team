@@ -13,9 +13,11 @@
     <nav class="tab-nav">
         <button class="active js_cards js_tab">Cards</button>
         <button class="js_fighters js_tab">Fighters</button>
+        <button class="js_pair js_tab">Pair</button>
     </nav>
 
     <div class="tab tab-cards">
+        <h2>Filter cards by fighter and/or card properties</h2>
         <div class="filters">
             <div class="filters__filter">
                 <h2 class="filters__title">Fighters</h2>
@@ -253,7 +255,7 @@
     </div>
 
     <div class="tab tab-fighters hidden">
-
+        <h2>Choose a fighter to see their board, stats, and cards</h2>
         <div class="fighter-select-container">
             <label for="fighter-select">Choose a fighter:</label>
             <select id="fighter-select" name="fighter-select">
@@ -384,7 +386,7 @@
                         <div class="bar bar--ten">
                             <div class="bar__segment bar__segment--full"></div>
                             <div class="bar__segment bar__segment--full"></div>
-                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--full"></div>
                             <div class="bar__segment bar__segment--empty"></div>
                             <div class="bar__segment bar__segment--empty"></div>
                             <div class="bar__segment bar__segment--empty"></div>
@@ -2209,7 +2211,7 @@
             <h2>Brawler</h2>
             <div class="fighter__info">
                 <div class="fighter__boards">
-                    <img src="./img/brawler/other/brawler_baoard.jpg" alt="">
+                    <img src="./img/brawler/other/brawler_board.jpg" alt="">
                 </div>
                 <div class="fighter__text">
                     <div class="fighter__data fighter__stats">
@@ -2544,6 +2546,76 @@
             </div>
         </div>
 
+        <div class="fighter-cards"></div>
+    </div>
+
+    <div class="tab tab-pair hidden">
+        <h2>Choose or randomize a pair of fighters</h2>
+        <div class="tab-pair__select-container">
+            <label for="fighter-pair-one">Fighter 1:</label>
+            <select id="fighter-pair-one" name="fighter-pair-one">
+                <option value="choose">Choose a Fighter</option>
+                <option value="bodvar">Bodvar</option>
+                <option value="ching-shih">Ching Shih</option>
+                <option value="joan">Joan</option>
+                <option value="maman-brijit">Maman Brijit</option>
+                <option value="mephisto">Mephisto</option>
+                <option value="milady">Milady</option>
+                <option value="mordred">Mordred</option>
+                <option value="shango">Shango</option>
+                <option value="the-fey-folk">The Fey Folk</option>
+                <option value="the-golem">The Golem</option>
+                <option value="the-wild-bunch">The Wild Bunch</option>
+                <option value="wong-fei-hung">Wong Fei-Hung</option>
+                <option value="excalibur">Excalibur</option>
+                <option value="merlin">Merlin</option>
+                <option value="morgan">Morgan</option>
+                <option value="perceval">Perceval</option>
+                <option value="the-dragon">The Dragon</option>
+                <option value="the-green-knight">The Green Knight</option>
+                <option value="big-brother">Big Brother</option>
+                <option value="brawler">Brawler</option>
+                <option value="combo-master">Combo Master</option>
+                <option value="hunter">Hunter</option>
+                <option value="ninja">Ninja</option>
+                <option value="samurai">Samurai</option>
+            </select>
+
+            <label for="fighter-pair-two">Fighter 2:</label>
+            <select id="fighter-pair-two" name="fighter-pair-two">
+                <option value="choose">Choose a Fighter</option>
+                <option value="bodvar">Bodvar</option>
+                <option value="ching-shih">Ching Shih</option>
+                <option value="joan">Joan</option>
+                <option value="maman-brijit">Maman Brijit</option>
+                <option value="mephisto">Mephisto</option>
+                <option value="milady">Milady</option>
+                <option value="mordred">Mordred</option>
+                <option value="shango">Shango</option>
+                <option value="the-fey-folk">The Fey Folk</option>
+                <option value="the-golem">The Golem</option>
+                <option value="the-wild-bunch">The Wild Bunch</option>
+                <option value="wong-fei-hung">Wong Fei-Hung</option>
+                <option value="excalibur">Excalibur</option>
+                <option value="merlin">Merlin</option>
+                <option value="morgan">Morgan</option>
+                <option value="perceval">Perceval</option>
+                <option value="the-dragon">The Dragon</option>
+                <option value="the-green-knight">The Green Knight</option>
+                <option value="big-brother">Big Brother</option>
+                <option value="brawler">Brawler</option>
+                <option value="combo-master">Combo Master</option>
+                <option value="hunter">Hunter</option>
+                <option value="ninja">Ninja</option>
+                <option value="samurai">Samurai</option>
+            </select>
+        </div>
+
+        <div class="tab-pair__random-pair-btn-container">
+            <button class="btn js_random-pair-btn">Random Pair</button>
+        </div>
+        <div class="pair js_pair-container"></div>
+        <div class="tab-pair__stats js_pair-stats"></div>
         <div class="fighter-cards"></div>
     </div>
 
