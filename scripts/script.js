@@ -1704,7 +1704,7 @@ function placePairCards(fighterOne, fighterTwo) {
                     } else {
                         newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
                     }
-                    
+
                     cardsContainer.appendChild(newImage);
 
                     if (card.hasAttack) {
@@ -1740,7 +1740,13 @@ function placePairCards(fighterOne, fighterTwo) {
                 for (let i = 0; i < copies; i++) {
                     let newImage = document.createElement('img');
                     newImage.classList.add("card");
-                    newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+
+                    if (card.hasNonStarters && i !== 0) {
+                        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + "_non-starter.jpg";
+                    } else {
+                        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+                    }
+                    
                     cardsContainer.appendChild(newImage);
 
                     if (card.hasAttack) {
