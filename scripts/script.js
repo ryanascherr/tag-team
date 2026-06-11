@@ -1,7 +1,7 @@
 // TODO
-// Filter for effects that happen as soon as you add cards to deck
 // Fix Mephisto and Golem and Wong starting card in fighter section
 // Fix layout of fighter section
+// Lazy loading
 
 export let fighters = [
     // BASE SET
@@ -266,7 +266,8 @@ export let fighters = [
                 hasAttack: true,
                 hasGainPower: true,
                 hasUniqueIcon: true,
-                hasConditional: true
+                hasConditional: true,
+                hasNonStarters: true
             },
             {
                 fighter: "Mephisto",
@@ -1562,7 +1563,13 @@ function placeFighterCards(fighterName) {
                 for (let i = 0; i < copies; i++) {
                     let newImage = document.createElement('img');
                     newImage.classList.add("card");
-                    newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+
+                    if (card.hasNonStarters && i !== 0) {
+                        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + "_non-starter.jpg";
+                    } else {
+                        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+                    }
+
                     cardsContainer.appendChild(newImage);
                 }
             })
@@ -1691,7 +1698,13 @@ function placePairCards(fighterOne, fighterTwo) {
                 for (let i = 0; i < copies; i++) {
                     let newImage = document.createElement('img');
                     newImage.classList.add("card");
-                    newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+
+                    if (card.hasNonStarters && i !== 0) {
+                        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + "_non-starter.jpg";
+                    } else {
+                        newImage.src = "./img/" + name + "/cards/" + name + "_card_" + cardName + ".jpg";
+                    }
+                    
                     cardsContainer.appendChild(newImage);
 
                     if (card.hasAttack) {
