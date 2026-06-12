@@ -1,6 +1,18 @@
-import { cardArray } from './script.js';
 import { checkFighters, checkActions } from './checkFilters.js';
 import { getFighters, getActions } from './getFilteredCards.js';
+import { fighters } from './fighters.js';
+
+let cardArray = [];
+
+getAllCards();
+function getAllCards() {
+    fighters.forEach((fighter) => {
+        let cards = fighter.cards;
+        cards.forEach((card) => {
+            cardArray.push(card);
+        })
+    })
+}
 
 export function getCards() {
     let array = cardArray;
