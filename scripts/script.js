@@ -4,7 +4,6 @@
 // Lazy loading
 // Add comments to JS
 // Update readme
-// Limit percentage on pair screen to certain decimals (Ninja and Mordred)
 // Further refactor CSS
 
 import { fighters } from "./fighters.js";
