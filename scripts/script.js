@@ -2,10 +2,10 @@
 // Fix Wong and Maman starting card in fighter section
 // Fix layout of fighter section
 // Lazy loading
-// Organize CSS
 // Add comments to JS
 // Update readme
 // Limit percentage on pair screen to certain decimals (Ninja and Mordred)
+// Further refactor CSS
 
 import { fighters } from "./fighters.js";
 import { getCards } from "./getCards.js";
@@ -360,10 +360,10 @@ function handlePairDropdowns() {
 function displayPairStats(numberOfAttacks, numberOfBlocks, numberOfHeals, numberOfPowerGains) {
     let statsContainer = document.querySelector(".js_pair-stats");
 
-    let attackPercent = numberOfAttacks/20 * 100;
-    let blockPercent = numberOfBlocks/20 * 100;
-    let healPercent = numberOfHeals/20 * 100;
-    let powerGainPercent = numberOfPowerGains/20 * 100;
+    let attackPercent = (numberOfAttacks/20 * 100).toFixed(0);
+    let blockPercent = (numberOfBlocks/20 * 100).toFixed(0);
+    let healPercent = (numberOfHeals/20 * 100).toFixed(0);
+    let powerGainPercent = (numberOfPowerGains/20 * 100).toFixed(0);
 
     statsContainer.innerHTML = `
         <h3>Attacks: ${numberOfAttacks} | ${attackPercent}%</h3>
