@@ -1,0 +1,36 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+.cards-container img {
+  max-width: 100%;
+  width: 100%;
+}
+.cards-container img:hover {
+  cursor: pointer;
+}
+
+.fighter-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .fighter-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+.fighter-cards img {
+  max-width: 100%;
+  width: 100%;
+}
+.fighter-cards img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=cards-container.css.map */

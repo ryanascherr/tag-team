@@ -1,0 +1,21 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+.cards img {
+  max-width: 100%;
+  width: 100%;
+}
+.cards img:hover {
+  cursor: pointer;
+}
+
+.cards-container {
+  margin-top: 1rem;
+}/*# sourceMappingURL=cards.css.map */

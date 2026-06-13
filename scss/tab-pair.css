@@ -1,0 +1,42 @@
+.tab-pair__select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tab-pair__select-container label {
+  margin-bottom: 0.5rem;
+}
+.tab-pair__select-container select {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .tab-pair__select-container {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .tab-pair__select-container label {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+  .tab-pair__select-container select {
+    margin-bottom: 0;
+  }
+  .tab-pair__select-container #fighter-pair-one {
+    margin-right: 1rem;
+  }
+}
+.tab-pair__random-pair-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.tab-pair .pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.tab-pair .pair__board {
+  width: 100%;
+}/*# sourceMappingURL=tab-pair.css.map */

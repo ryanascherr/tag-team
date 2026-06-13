@@ -4,6 +4,8 @@
 // Lazy loading
 // Organize CSS
 // Add comments to JS
+// Update readme
+// Limit percentage on pair screen to certain decimals (Ninja and Mordred)
 
 import { fighters } from "./fighters.js";
 import { getCards } from "./getCards.js";

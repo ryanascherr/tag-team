@@ -1,0 +1,23 @@
+.bar {
+    border: 2px solid var(--primary);
+    height: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+
+    &--ten {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    &--twenty {
+        grid-template-columns: repeat(20, 1fr);
+    }
+
+    &__segment {
+        border: 2px solid var(--primary);
+
+        &--full {
+            background-color: yellow;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.btn {
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+    transition: all .25s;
+    font-weight: bold;
+    margin: .5rem;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff
+        ;
+        color: var(--primary);
+    }
+}

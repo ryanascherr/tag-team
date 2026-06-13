@@ -1,0 +1,15 @@
+.btn {
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: all 0.25s;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--primary);
+}/*# sourceMappingURL=button.css.map */

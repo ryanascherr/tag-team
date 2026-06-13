@@ -1,0 +1,83 @@
+.fighter-select-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+
+    label {
+        margin-right: .5rem;
+    }
+}
+
+.fighter {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 0 0 .25rem 0;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 0 0 .25rem 0;
+        color: var(--primary);
+    }
+
+    &__info {
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+
+    &__info:has(.fighter__boards--two) {
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__boards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        &--two {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__bio {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 1.5;
+
+            @media screen and (min-width: 992px) {
+                font-size: 1.75rem;
+            }
+        }
+    }
+
+    &__data {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
