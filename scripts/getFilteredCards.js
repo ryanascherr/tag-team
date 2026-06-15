@@ -1,3 +1,4 @@
+// If fighter's input was checked, keep thir cards in the array; otherwise, remove the cards from the array
 export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight, bigBrother, brawler, comboMaster, hunter, ninja, samurai) {
 
     if (!bodvar) {
@@ -76,6 +77,7 @@ export function getFighters(array, bodvar, chingShih, excalibur, joan, mamanBrij
     return array;
 }
 
+// If card property's input was checked, keep thir cards in the array; otherwise, remove the cards from the array
 export function getActions(array, startingCard, attack, block, heal, directDamage, gainPower, uniqueIcon, cancel, conditional, winCondition, affectsStartingCard, reflect, selfHarm, single, multiple, affectsFriendlyAlly, affectsOpponentAlly, instantBonus) {
 
     if (startingCard) {

@@ -644,7 +644,8 @@ export let fighters = [
                 isStartingCard: true,
                 hasAttack: true,
                 hasUniqueIcon: true,
-                hasConditional: true
+                hasConditional: true,
+                hasNonStarters: true
             },
             {
                 fighter: "Wong Fei-Hung",

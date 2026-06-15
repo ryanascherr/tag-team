@@ -1,8 +1,9 @@
+// 
 export function placeCards(array) {
     let cardsContainer = document.querySelector(".cards-container");
     cardsContainer.innerHTML = "";
 
-    array.forEach((card, index, array) => {
+    array.forEach((card) => {
         let name = card.fighter;
         name = name.toLocaleLowerCase();
         name = name.replace(/ /g, "-");

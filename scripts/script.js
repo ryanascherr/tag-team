@@ -2,15 +2,13 @@
 // Fix Wong and Maman starting card in fighter section
 // Fix layout of fighter section
 // Lazy loading
-// Add comments to JS
-// Update readme
 // Further refactor CSS
 
 import { fighters } from "./fighters.js";
 import { getCards } from "./getCards.js";
 import { placeCards } from "./placeCards.js";
-import { openModal, closeModal } from './modalControl.js';
 import { makeLowerCase } from "./makeLowerCase.js";
+import { openModal, closeModal } from "./modalControl.js";
 
 // GENERAL START
 
@@ -49,6 +47,7 @@ document.body.addEventListener('click', function(event) {
 // GENERAL END
 // MODAL START
 
+// When a card is clicked, open modal
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("card")) {
         let card = event.target;
@@ -57,6 +56,7 @@ document.body.addEventListener('click', function(event) {
     }
 });
 
+// When modal image or content or close button is clicked, close modal
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("modal__img") || event.target.classList.contains("modal__content") || event.target.classList.contains("modal__close-btn")) {
         closeModal();
@@ -70,6 +70,7 @@ let allInputs = document.querySelectorAll(".js_criteria");
 let fighterInputs = document.querySelectorAll(".js_fighter");
 let cardsContainer = document.querySelector(".cards-container");
 
+// When an input changes, show appropriate cards and show number of results
 allInputs.forEach((input) => {
     input.addEventListener('change', function() {
         handleCards();
@@ -77,12 +78,14 @@ allInputs.forEach((input) => {
     });
 });
 
+// Check all filters and show cards accordingly
 handleCards();
 function handleCards() {
     let array = getCards();
     placeCards(array);
 }
 
+// Count how many cards have been displayed and show that number
 displayResultsCount();
 function displayResultsCount() {
     let resultCount = cardsContainer.childElementCount;
@@ -90,12 +93,12 @@ function displayResultsCount() {
     resultsElem.textContent = resultCount + " Cards Found";
 }
 
+// When 'clear all' button is clicked, remove checkmarks from all fighters
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_clear-set")) {
         clearFighters();
     }
 });
-
 function clearFighters() {
     fighterInputs.forEach((input) => {
         input.checked = false;
@@ -105,12 +108,12 @@ function clearFighters() {
     displayResultsCount();
 }
 
+// When 'check all' button is clicked, add checkmarks to all fighters
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_check-set")) {
         checkFighters();
     }
 });
-
 function checkFighters() {
     fighterInputs.forEach((input) => {
         input.checked = true;
@@ -120,6 +123,7 @@ function checkFighters() {
     displayResultsCount();
 }
 
+// When set button is clicked, uncheck all checkboxes and then check the checkboxes of fighters from that set
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_set")) {
         fighterInputs.forEach((input) => {
@@ -152,6 +156,8 @@ document.body.addEventListener('click', function(event) {
 
 let fighterDropdown = document.getElementById("fighter-select");
 
+// When fighter dropdown is changed, show all info for that fighter (i.e., fighter board(s), bio, stats, card distribution, and cards)
+
 fighterDropdown.addEventListener("change", () => {
     displayFighterCards();
 });
@@ -178,6 +184,7 @@ function showFighter(selectedFighter, properName) {
     placeFighterCards(properName);
 }
 
+// TODO Make this other function
 function placeFighterCards(fighterName) {
     let cardsContainer = document.querySelector(".tab-fighters .fighter-cards");
     cardsContainer.innerHTML = "";
@@ -209,6 +216,10 @@ function placeFighterCards(fighterName) {
 // FIGHTERS TAB END
 // PAIRS TAB START
 
+// When 'random pair' button is clicked...
+// - Get two different random numbers of fighters
+// - Get the fighters' names
+// - Show their fighter boards, show their cards, and show their card distributions
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_random-pair-btn")) {
         let randomNumberOne = Math.floor(Math.random() * 24);
@@ -252,6 +263,7 @@ function placeFighterBoards(fighterOne, fighterTwo) {
     }
 };
 
+// TODO: Make into other function
 function placePairCards(fighterOne, fighterTwo) {
     let cardsContainer = document.querySelector(".tab-pair .fighter-cards");
     cardsContainer.innerHTML = "";
@@ -336,6 +348,7 @@ function placePairCards(fighterOne, fighterTwo) {
     displayPairStats(numberOfAttacks, numberOfBlocks, numberOfHeals, numberOfPowerGains)
 };
 
+// When dropdown is changed, look at both dropdowns and display the info for the appropriate fighters
 let pairDropdownOne = document.getElementById("fighter-pair-one");
 pairDropdownOne.addEventListener("change", () => {
     handlePairDropdowns();

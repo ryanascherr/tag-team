@@ -4,6 +4,7 @@ import { fighters } from './fighters.js';
 
 let cardArray = [];
 
+// Update card array to include all cards
 getAllCards();
 function getAllCards() {
     fighters.forEach((fighter) => {
@@ -14,6 +15,7 @@ function getAllCards() {
     })
 }
 
+// Get all of the information on what cards should be displayed and return that array
 export function getCards() {
     let array = cardArray;
     

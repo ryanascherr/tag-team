@@ -1,3 +1,4 @@
+// See which fighter inputs are checked and return the boolean
 export function checkFighters() {
     let bodvar = document.querySelector('.js_bodvar').checked;
     let chingShih = document.querySelector('.js_ching-shih').checked;
@@ -27,6 +28,7 @@ export function checkFighters() {
     return [bodvar, chingShih, excalibur, joan, mamanBrijit, mephisto, milady, mordred, shango, theFeyFolk, theGolem, theWildBunch, wongFeiHung, merlin, morgan, perceval, theDragon, theGreenKnight, bigBrother, brawler, comboMaster, hunter, ninja, samurai];
 }
 
+// See which card properties inputs are checked and return the boolean
 export function checkActions() {
     let startingCard = document.querySelector('.js_starting-card').checked;
     let attack = document.querySelector('.js_attack').checked;
