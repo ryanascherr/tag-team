@@ -206,7 +206,8 @@ export let fighters = [
                 isStartingCard: true,
                 hasAttack: true,
                 hasDirectDamage: true,
-                hasSelfHarm: true
+                hasSelfHarm: true,
+                hasNonStarters: true
             },
             {
                 fighter: "Maman Brijit",

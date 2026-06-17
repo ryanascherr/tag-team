@@ -1,8 +1,13 @@
 // TODO
-// Fix Wong and Maman starting card in fighter section
+// Fix Maman starting card in fighter section
 // Fix layout of fighter section
 // Lazy loading
 // Further refactor CSS
+// Animate stats bars
+    // Make background color one element, bars one element
+// Move modal to modalControl.js
+// Utilities section, or utilities.js with a bunch of small functions
+    // Should be completely agnostic -> take in variable and do stuff
 
 import { fighters } from "./fighters.js";
 import { getCards } from "./getCards.js";
