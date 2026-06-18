@@ -145,6 +145,11 @@
                         <label class="filters__label" for="samurai">Samurai</label>
                         <img class="filters__icon" src="./img/samurai/icon_samurai.png" alt="">
                     </li>
+                    <li class="filters__list-item">
+                        <input class="filters__input js_criteria js_fighter js_the-cursed js_new-set" checked type="checkbox" id="the-cursed" name="checkbox" value="1">
+                        <label class="filters__label" for="the-cursed">The Cursed</label>
+                        <img class="filters__icon" src="./img/icons/icon_direct-damage.png" alt="">
+                    </li>
                 </ul>
                 <hr>
                 <div class="filters__btn-container">
@@ -288,6 +293,7 @@
                 <option value="hunter">Hunter</option>
                 <option value="ninja">Ninja</option>
                 <option value="samurai">Samurai</option>
+                <option value="the-cursed">The Cursed</option>
             </select>
         </div>
 
@@ -2550,6 +2556,71 @@
                 </div>
             </div>
         </div>
+        <div class="fighter hidden" id="the-cursed">
+            <h2>The Cursed</h2>
+            <div class="fighter__info">
+                <div class="fighter__boards">
+                    <img src="./img/the-cursed/other/the-cursed_board.jpg" alt="">
+                </div>
+                <div class="fighter__text">
+                    <div class="fighter__data fighter__stats">
+                        <h3>Card Distribution</h3>
+                        <h4>Attacks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Blocks</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Heals</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                        <h4>Power Gains</h4>
+                        <div class="bar bar--ten">
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--full"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                            <div class="bar__segment bar__segment--empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="fighter-cards cards"></div>
     </div>
@@ -2584,6 +2655,7 @@
                 <option value="hunter">Hunter</option>
                 <option value="ninja">Ninja</option>
                 <option value="samurai">Samurai</option>
+                <option value="the-cursed">The Cursed</option>
             </select>
 
             <label for="fighter-pair-two">Fighter 2:</label>
@@ -2613,6 +2685,7 @@
                 <option value="hunter">Hunter</option>
                 <option value="ninja">Ninja</option>
                 <option value="samurai">Samurai</option>
+                <option value="the-cursed">The Cursed</option>
             </select>
         </div>
 

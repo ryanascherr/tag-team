@@ -1,5 +1,4 @@
 // TODO
-// Fix Maman starting card in fighter section
 // Fix layout of fighter section
 // Lazy loading
 // Further refactor CSS
@@ -191,7 +190,7 @@ function showFighter(selectedFighter, properName) {
 
 // TODO Make this other function
 function placeFighterCards(fighterName) {
-    let cardsContainer = document.querySelector(".tab-fighters .fighter-cards");
+    let cardsContainer = document.querySelector(".tab-fighters > .fighter-cards");
     cardsContainer.innerHTML = "";
 
     fighters.forEach((fighter) => {
@@ -216,6 +215,15 @@ function placeFighterCards(fighterName) {
             })
         }
     })
+
+    if (fighterName === "Samurai") {
+        for (let i = 1; i < 8; i++) {
+            let newImage = document.createElement('img');
+            newImage.classList.add("card");
+            newImage.src = `./img/samurai/cards/samurai_card_technique-${i}.jpg`;
+            cardsContainer.appendChild(newImage);
+        }
+    }
 }
 
 // FIGHTERS TAB END
@@ -227,13 +235,13 @@ function placeFighterCards(fighterName) {
 // - Show their fighter boards, show their cards, and show their card distributions
 document.body.addEventListener('click', function(event) {
     if (event.target.classList.contains("js_random-pair-btn")) {
-        let randomNumberOne = Math.floor(Math.random() * 24);
-        let randomNumberTwo = Math.floor(Math.random() * 24);
+        let randomNumberOne = Math.floor(Math.random() * 25);
+        let randomNumberTwo = Math.floor(Math.random() * 25);
 
         checkNumbers();
         function checkNumbers() {
             if (randomNumberOne === randomNumberTwo) {
-                randomNumberTwo = Math.floor(Math.random() * 24);
+                randomNumberTwo = Math.floor(Math.random() * 25);
                 checkNumbers();
             }
         }

@@ -1340,4 +1340,48 @@ export let fighters = [
             },
         ]
     },
+    {
+        name: "The Cursed",
+        cards: [
+            {
+                fighter: "The Cursed",
+                name: "Cursed Power",
+                copies: 2,
+                isStartingCard: true,
+                hasNonStarters: true,
+                hasDirectDamage: true,
+                hasGainPower: true,
+                hasPowerSelf: true,
+                hasSelfHarm: true
+            },
+            {
+                fighter: "The Cursed",
+                name: "Ancient Amulet",
+                copies: 2,
+                hasBlock: true
+            },
+            {
+                fighter: "The Cursed",
+                name: "Blood Bound",
+                copies: 2,
+                hasDirectDamage: true,
+                hasHeal: true,
+                affectsFriendlyAlly: true
+            },
+            {
+                fighter: "The Cursed",
+                name: "Fanatical Frenzy",
+                copies: 2,
+                hasAttack: true,
+                hasAttackBoth: true,
+                affectsOpponentAlly: true
+            },
+            {
+                fighter: "The Cursed",
+                name: "Ritual Dagger",
+                copies: 2,
+                hasAttack: true
+            },
+        ]
+    },
 ];
