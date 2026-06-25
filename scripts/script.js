@@ -178,9 +178,14 @@ function displayFighterCards() {
 
 function showFighter(selectedFighter, properName) {
     let fighters = document.querySelectorAll(".fighter");
+    let tokenContainers = document.querySelectorAll(".tokens");
 
     fighters.forEach((fighter) => {
         fighter.classList.add("hidden");
+    });
+
+    tokenContainers.forEach((tokenContainer) => {
+        tokenContainer.classList.add("hidden");
     });
 
     selectedFighter.classList.remove("hidden");
@@ -223,6 +228,36 @@ function placeFighterCards(fighterName) {
             newImage.src = `./img/samurai/cards/samurai_card_technique-${i}.jpg`;
             cardsContainer.appendChild(newImage);
         }
+    }
+
+    if (fighterName === "Mephisto") {
+        let mephistoTokens = document.querySelector('[data-id="mephisto"]');
+        mephistoTokens.classList.remove("hidden");
+    }
+
+    if (fighterName === "Milady") {
+        let miladyTokens = document.querySelector('[data-id="milady"]');
+        miladyTokens.classList.remove("hidden");
+    }
+
+    if (fighterName === "Shango") {
+        let shangoTokens = document.querySelector('[data-id="shango"]');
+        shangoTokens.classList.remove("hidden");
+    }
+
+    if (fighterName === "The Golem") {
+        let golemTokens = document.querySelector('[data-id="the-golem"]');
+        golemTokens.classList.remove("hidden");
+    }
+
+    if (fighterName === "The Wild Bunch") {
+        let wildBunchTokens = document.querySelector('[data-id="the-wild-bunch"]');
+        wildBunchTokens.classList.remove("hidden");
+    }
+
+    if (fighterName === "Wong Fei-Hung") {
+        let wongTokens = document.querySelector('[data-id="wong-fei-hung"]');
+        wongTokens.classList.remove("hidden");
     }
 }
 

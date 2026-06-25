@@ -7,6 +7,42 @@
 @use './fighter.scss' as *;
 @use './cards.scss' as *;
 
+// .bar-2 {    
+//     background-color: #fff;
+//     border: 2px solid var(--primary);
+//     height: 1.5rem;
+//     margin-bottom: 1rem;
+//     position: relative;
+
+//     .segments {
+//         display: grid;
+//         grid-template-columns: repeat(5, 1fr);
+//         height: 100%;
+//         z-index: 10;
+//         position: relative;
+
+//         div {
+//             border: 2px solid var(--primary);
+//         }
+//     }
+
+//     .test {
+//         position: absolute;
+//         background-color: yellow;
+//         width: 20%;
+//         height: 100%;
+//         left: 0;
+//         top: 0;
+//         z-index: 9;
+
+//         transition: width 1s;
+
+//         &__20 {
+            
+//         }
+//     }
+// }
+
 $primary-purple: #7A5E88;
 
 :root {
@@ -38,7 +74,7 @@ hr {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .desktop-only {
@@ -55,3 +91,60 @@ hr {
     padding: 1rem;
 }
 
+// fighter specific
+
+.tokens-container {
+    margin-bottom: 1.5rem;
+
+    .token {
+        width: 100%;
+        max-width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .serpents,
+    .concentrations {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        img {
+            max-width: 200px;
+
+            &:first-child {
+                justify-self: flex-end;
+            }
+        }
+    }
+
+    .schemes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        @media screen and (min-width: 576px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+    .aflames {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+
+    .presences,
+    .sheriffs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        img {
+            max-width: 150px;
+            justify-self: center;
+        }
+    }
+}

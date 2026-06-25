@@ -358,7 +358,7 @@ hr {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .desktop-only {
@@ -374,4 +374,55 @@ hr {
   display: flex;
   justify-content: center;
   padding: 1rem;
+}
+
+.tokens-container {
+  margin-bottom: 1.5rem;
+}
+.tokens-container .token {
+  width: 100%;
+  max-width: 100%;
+}
+.tokens-container .token:hover {
+  cursor: pointer;
+}
+.tokens-container .serpents,
+.tokens-container .concentrations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.tokens-container .serpents img,
+.tokens-container .concentrations img {
+  max-width: 200px;
+}
+.tokens-container .serpents img:first-child,
+.tokens-container .concentrations img:first-child {
+  justify-self: flex-end;
+}
+.tokens-container .schemes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .tokens-container .schemes {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.tokens-container .aflames {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.tokens-container .presences,
+.tokens-container .sheriffs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.tokens-container .presences img,
+.tokens-container .sheriffs img {
+  max-width: 150px;
+  justify-self: center;
 }/*# sourceMappingURL=main.css.map */
